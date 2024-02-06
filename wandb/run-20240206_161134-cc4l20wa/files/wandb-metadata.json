@@ -1,0 +1,390 @@
+{
+    "os": "Linux-5.4.0-155-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-02-06T08:11:35.029009",
+    "startedAt": "2024-02-06T08:11:34.119536",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/tune_clip.py",
+    "codePathLocal": "tune_clip.py",
+    "codePath": "tune_clip.py",
+    "host": "gpu1-13",
+    "username": "wenshuozhang",
+    "executable": "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/bin/python",
+    "cpu_count": 64,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 3.0499062499999985,
+        "min": 800.0,
+        "max": 3400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.199,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.199,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.199,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.199,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.168,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.199,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.199,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.199,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.199,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 3400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 786.3739242553711,
+            "used": 172.02858352661133
+        }
+    },
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "gpu_count": 8,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A800-SXM4-80GB",
+            "memory_total": 85899345920
+        }
+    ],
+    "memory": {
+        "total": 1007.5425262451172
+    }
+}

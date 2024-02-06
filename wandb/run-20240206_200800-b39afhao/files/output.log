@@ -1,0 +1,983 @@
+We finished the setting up process!
+The device we use are shown here:  cuda:0
+We have loaded Vit-B/32:  CLIP(
+  (visual): VisionTransformer(
+    (conv1): Conv2d(3, 768, kernel_size=(32, 32), stride=(32, 32), bias=False)
+    (ln_pre): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+    (transformer): Transformer(
+      (resblocks): Sequential(
+        (0): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): ResidualAttentionBlock(
+          (attn): MultiheadAttention(
+            (out_proj): NonDynamicallyQuantizableLinear(in_features=768, out_features=768, bias=True)
+          )
+          (ln_1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Sequential(
+            (c_fc): Linear(in_features=768, out_features=3072, bias=True)
+            (gelu): QuickGELU()
+            (c_proj): Linear(in_features=3072, out_features=768, bias=True)
+          )
+          (ln_2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+    )
+    (ln_post): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  )
+  (transformer): Transformer(
+    (resblocks): Sequential(
+      (0): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (1): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (2): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (3): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (4): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (5): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (6): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (7): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (8): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (9): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (10): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+      (11): ResidualAttentionBlock(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)
+        )
+        (ln_1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (c_fc): Linear(in_features=512, out_features=2048, bias=True)
+          (gelu): QuickGELU()
+          (c_proj): Linear(in_features=2048, out_features=512, bias=True)
+        )
+        (ln_2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (token_embedding): Embedding(49408, 512)
+  (ln_final): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+)
+train_dataloader is prepared and its length is:  1017712
+We are in epoch:  0  out of total epoch:  5
+Current input caption longth:  73
+Current input caption longth:  80
+Current input caption longth:  87
+Current input caption longth:  52
+Current input caption longth:  77
+Current input caption longth:  417
+Current input caption longth:  64
+Current input caption longth:  90
+Current input caption longth:  116
+Current input caption longth:  99
+We are in epoch i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([10, 3, 224, 224]) torch.Size([10, 77])
+Current input caption longth:  42
+Current input caption longth:  114
+Current input caption longth:  49
+Current input caption longth:  53
+Current input caption longth:  80
+Current input caption longth:  77
+Current input caption longth:  182
+Current input caption longth:  143
+Current input caption longth:  62
+Current input caption longth:  59
+We are in epoch i:  1
+Current input caption longth:  72
+Current input caption longth:  153
+Current input caption longth:  87
+Current input caption longth:  75
+Current input caption longth:  175
+Current input caption longth:  123
+Current input caption longth:  245
+Current input caption longth:  60
+Current input caption longth:  85
+Current input caption longth:  148
+We are in epoch i:  2
+Current input caption longth:  100
+Current input caption longth:  69
+Current input caption longth:  93
+Current input caption longth:  54
+Current input caption longth:  72
+Current input caption longth:  75
+Current input caption longth:  88
+Current input caption longth:  71
+Current input caption longth:  58
+Current input caption longth:  146
+We are in epoch i:  3
+Current input caption longth:  70
+Current input caption longth:  158
+Current input caption longth:  74
+Current input caption longth:  78
+Current input caption longth:  87
+Current input caption longth:  72
+Current input caption longth:  74
+Current input caption longth:  70
+Current input caption longth:  52
+Current input caption longth:  193
+We are in epoch i:  4
+Current input caption longth:  181
+Current input caption longth:  44
+Current input caption longth:  73
+Current input caption longth:  229
+Current input caption longth:  27
+Current input caption longth:  63
+Current input caption longth:  118
+Current input caption longth:  138
+Current input caption longth:  53
+Current input caption longth:  24
+We are in epoch i:  5
+Current input caption longth:  96
+Current input caption longth:  121
+Current input caption longth:  124
+Current input caption longth:  547
+Current input caption longth:  188
+Current input caption longth:  106
+Current input caption longth:  122
+Current input caption longth:  113
+Current input caption longth:  549
+Current input caption longth:  73
+We are in epoch i:  6
+Current input caption longth:  119
+Current input caption longth:  121
+Current input caption longth:  274
+Current input caption longth:  211
+Current input caption longth:  114
+Current input caption longth:  103
+Current input caption longth:  42
+Current input caption longth:  78
+Current input caption longth:  74
+Current input caption longth:  87
+We are in epoch i:  7
+Current input caption longth:  88
+Current input caption longth:  273
+Current input caption longth:  81
+Current input caption longth:  99
+Current input caption longth:  134
+Current input caption longth:  64
+Current input caption longth:  34
+Current input caption longth:  67
+Current input caption longth:  228
+Current input caption longth:  117
+We are in epoch i:  8
+Current input caption longth:  112
+Current input caption longth:  155
+Current input caption longth:  71
+Current input caption longth:  108
+Current input caption longth:  91
+Current input caption longth:  126
+Current input caption longth:  116
+Current input caption longth:  78
+Current input caption longth:  105
+Current input caption longth:  109
+We are in epoch i:  9
+Current input caption longth:  391
+Current input caption longth:  99
+Current input caption longth:  101
+Current input caption longth:  68
+Current input caption longth:  121
+Current input caption longth:  82
+Current input caption longth:  107
+Current input caption longth:  137
+Current input caption longth:  91
+Current input caption longth:  176
+We are in epoch i:  10
+Current input caption longth:  67
+Current input caption longth:  92
+Current input caption longth:  74
+Current input caption longth:  134
+Current input caption longth:  102
+Current input caption longth:  112
+Current input caption longth:  62
+Current input caption longth:  54
+Current input caption longth:  32
+Current input caption longth:  136
+We are in epoch i:  11
+We are in epoch:  1  out of total epoch:  5
+Current input caption longth:  62
+Current input caption longth:  143
+Current input caption longth:  117
+Current input caption longth:  97
+Current input caption longth:  126
+Current input caption longth:  84
+Current input caption longth:  77
+Current input caption longth:  86
+Current input caption longth:  35
+Current input caption longth:  56
+We are in epoch i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([10, 3, 224, 224]) torch.Size([10, 77])
+Current input caption longth:  138
+Current input caption longth:  91
+Current input caption longth:  163
+Current input caption longth:  101
+Current input caption longth:  42
+Current input caption longth:  115
+Current input caption longth:  59
+Current input caption longth:  90
+Current input caption longth:  69
+Current input caption longth:  69
+We are in epoch i:  1
+Current input caption longth:  85
+Current input caption longth:  78
+Current input caption longth:  50
+Current input caption longth:  47
+Current input caption longth:  79
+Current input caption longth:  161
+Current input caption longth:  98
+Current input caption longth:  58
+Current input caption longth:  72
+Current input caption longth:  627
+We are in epoch i:  2
+Current input caption longth:  126
+Current input caption longth:  45
+Current input caption longth:  111
+Current input caption longth:  87
+Current input caption longth:  204
+Current input caption longth:  103
+Current input caption longth:  81
+Current input caption longth:  97
+Current input caption longth:  95
+Current input caption longth:  343
+We are in epoch i:  3
+Current input caption longth:  49
+Current input caption longth:  88
+Current input caption longth:  151
+Current input caption longth:  83
+Current input caption longth:  105
+Current input caption longth:  45
+Current input caption longth:  58
+Current input caption longth:  83
+Current input caption longth:  36
+Current input caption longth:  268
+We are in epoch i:  4
+Current input caption longth:  82
+Current input caption longth:  51
+Current input caption longth:  3
+Current input caption longth:  186
+Current input caption longth:  305
+Current input caption longth:  96
+Current input caption longth:  54
+Current input caption longth:  195
+Current input caption longth:  249
+Current input caption longth:  99
+We are in epoch i:  5
+Current input caption longth:  61
+Current input caption longth:  166
+Current input caption longth:  990
+Current input caption longth:  63
+Current input caption longth:  111
+Current input caption longth:  84
+Current input caption longth:  73
+Current input caption longth:  128
+Current input caption longth:  85
+Current input caption longth:  76
+We are in epoch i:  6
+Current input caption longth:  133
+Current input caption longth:  175
+Current input caption longth:  103
+Current input caption longth:  75
+Current input caption longth:  223
+Current input caption longth:  118
+Current input caption longth:  58
+Current input caption longth:  108
+Current input caption longth:  48
+Current input caption longth:  171
+We are in epoch i:  7
+Current input caption longth:  57
+Current input caption longth:  26
+Current input caption longth:  38
+Current input caption longth:  72
+Current input caption longth:  227
+Current input caption longth:  178
+Current input caption longth:  150
+Current input caption longth:  56
+Current input caption longth:  53
+Current input caption longth:  50
+We are in epoch i:  8
+Current input caption longth:  151
+Current input caption longth:  51
+Current input caption longth:  73
+Current input caption longth:  113
+Current input caption longth:  36
+Current input caption longth:  140
+Current input caption longth:  457
+Current input caption longth:  88
+Current input caption longth:  77
+Current input caption longth:  248
+We are in epoch i:  9
+Current input caption longth:  201
+Current input caption longth:  262
+Current input caption longth:  300
+Current input caption longth:  76
+Current input caption longth:  63
+Current input caption longth:  102
+Current input caption longth:  49
+Current input caption longth:  227
+Current input caption longth:  54
+Current input caption longth:  125
+We are in epoch i:  10
+Current input caption longth:  31
+Current input caption longth:  138
+Current input caption longth:  63
+Current input caption longth:  83
+Current input caption longth:  93
+Current input caption longth:  86
+Current input caption longth:  220
+Current input caption longth:  60
+Current input caption longth:  84
+Current input caption longth:  1487
+We are in epoch i:  11
+We are in epoch:  2  out of total epoch:  5
+Current input caption longth:  230
+Current input caption longth:  102
+Current input caption longth:  92
+Current input caption longth:  92
+Current input caption longth:  99
+Current input caption longth:  62
+Current input caption longth:  120
+Current input caption longth:  117
+Current input caption longth:  105
+Current input caption longth:  75
+We are in epoch i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([10, 3, 224, 224]) torch.Size([10, 77])
+Current input caption longth:  140
+Current input caption longth:  62
+Current input caption longth:  47
+Current input caption longth:  168
+Current input caption longth:  75
+Current input caption longth:  226
+Current input caption longth:  110
+Current input caption longth:  115
+Current input caption longth:  66
+Current input caption longth:  149
+We are in epoch i:  1
+Current input caption longth:  139
+Current input caption longth:  111
+Current input caption longth:  102
+Current input caption longth:  405
+Current input caption longth:  43
+Current input caption longth:  152
+Current input caption longth:  112
+Current input caption longth:  76
+Current input caption longth:  45
+Current input caption longth:  151
+We are in epoch i:  2
+Current input caption longth:  87
+Current input caption longth:  52
+Current input caption longth:  93
+Current input caption longth:  51
+Current input caption longth:  38
+Current input caption longth:  53
+Current input caption longth:  66
+Current input caption longth:  69
+Current input caption longth:  67
+Current input caption longth:  91
+We are in epoch i:  3
+Current input caption longth:  113
+Current input caption longth:  134
+Current input caption longth:  89
+Current input caption longth:  157
+Current input caption longth:  78
+Current input caption longth:  70
+Current input caption longth:  104
+Current input caption longth:  66
+Current input caption longth:  64
+Current input caption longth:  24
+We are in epoch i:  4
+Current input caption longth:  62
+Current input caption longth:  120
+Current input caption longth:  71
+Current input caption longth:  55
+Current input caption longth:  117
+Current input caption longth:  133
+Current input caption longth:  92
+Current input caption longth:  59
+Current input caption longth:  181
+Current input caption longth:  58
+We are in epoch i:  5
+Current input caption longth:  137
+Current input caption longth:  276
+Current input caption longth:  41
+Current input caption longth:  54
+Current input caption longth:  25
+Current input caption longth:  87
+Current input caption longth:  236
+Current input caption longth:  108
+Current input caption longth:  83
+Current input caption longth:  48
+We are in epoch i:  6
+Current input caption longth:  78
+Current input caption longth:  38
+Current input caption longth:  82
+Current input caption longth:  106
+Current input caption longth:  363
+Current input caption longth:  78
+Current input caption longth:  88
+Current input caption longth:  72
+Current input caption longth:  108
+Current input caption longth:  88
+We are in epoch i:  7
+Current input caption longth:  84
+Current input caption longth:  56
+Current input caption longth:  63
+Current input caption longth:  233
+Current input caption longth:  72
+Current input caption longth:  133
+Current input caption longth:  70
+Current input caption longth:  78
+Current input caption longth:  72
+Current input caption longth:  43
+We are in epoch i:  8
+Current input caption longth:  66
+Current input caption longth:  101
+Current input caption longth:  62
+Current input caption longth:  49
+Current input caption longth:  77
+Current input caption longth:  91
+Current input caption longth:  336
+Current input caption longth:  68
+Current input caption longth:  96
+Current input caption longth:  129
+We are in epoch i:  9
+Current input caption longth:  253
+Current input caption longth:  61
+Current input caption longth:  33
+Current input caption longth:  68
+Current input caption longth:  53
+Current input caption longth:  78
+Current input caption longth:  147
+Current input caption longth:  52
+Current input caption longth:  93
+Current input caption longth:  45
+We are in epoch i:  10
+Current input caption longth:  37
+Current input caption longth:  571
+Current input caption longth:  171
+Current input caption longth:  96
+Current input caption longth:  251
+Current input caption longth:  175
+Current input caption longth:  102
+Current input caption longth:  92
+Current input caption longth:  102
+Current input caption longth:  150
+We are in epoch i:  11
+We are in epoch:  3  out of total epoch:  5
+Current input caption longth:  44
+Current input caption longth:  51
+Current input caption longth:  51
+Current input caption longth:  128
+Current input caption longth:  259
+Current input caption longth:  110
+Current input caption longth:  138
+Current input caption longth:  226
+Current input caption longth:  56
+Current input caption longth:  102
+We are in epoch i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([10, 3, 224, 224]) torch.Size([10, 77])
+Current input caption longth:  117
+Current input caption longth:  451
+Current input caption longth:  44
+Current input caption longth:  104
+Current input caption longth:  62
+Current input caption longth:  187
+Current input caption longth:  79
+Current input caption longth:  50
+Current input caption longth:  75
+Current input caption longth:  62
+We are in epoch i:  1
+Current input caption longth:  132
+Current input caption longth:  62
+Current input caption longth:  72
+Current input caption longth:  74
+Current input caption longth:  107
+Current input caption longth:  39
+Current input caption longth:  82
+Current input caption longth:  74
+Current input caption longth:  87
+Current input caption longth:  81
+We are in epoch i:  2
+Current input caption longth:  90
+Current input caption longth:  67
+Current input caption longth:  47
+Current input caption longth:  113
+Current input caption longth:  216
+Current input caption longth:  73
+Current input caption longth:  47
+Current input caption longth:  251
+Current input caption longth:  54
+Current input caption longth:  71
+We are in epoch i:  3
+Current input caption longth:  58
+Current input caption longth:  153
+Current input caption longth:  47
+Current input caption longth:  71
+Current input caption longth:  108
+Current input caption longth:  112
+Current input caption longth:  84
+Current input caption longth:  73
+Current input caption longth:  75
+Current input caption longth:  24
+We are in epoch i:  4
+Current input caption longth:  247
+Current input caption longth:  115
+Current input caption longth:  226
+Current input caption longth:  58
+Current input caption longth:  36
+Current input caption longth:  115
+Current input caption longth:  86
+Current input caption longth:  269
+Current input caption longth:  79
+Current input caption longth:  172
+We are in epoch i:  5
+Current input caption longth:  120
+Current input caption longth:  141
+Current input caption longth:  68
+Current input caption longth:  111
+Current input caption longth:  112
+Current input caption longth:  106
+Current input caption longth:  753
+Current input caption longth:  166
+Current input caption longth:  204
+Current input caption longth:  57
+We are in epoch i:  6
+Current input caption longth:  68
+Current input caption longth:  76
+Current input caption longth:  46
+Current input caption longth:  39
+Current input caption longth:  161
+Current input caption longth:  114
+Current input caption longth:  100
+Current input caption longth:  101
+Current input caption longth:  524
+Current input caption longth:  86
+We are in epoch i:  7
+Current input caption longth:  485
+Current input caption longth:  185
+Current input caption longth:  96
+Current input caption longth:  68
+Current input caption longth:  30
+Current input caption longth:  60
+Current input caption longth:  68
+Current input caption longth:  81
+Current input caption longth:  90
+Current input caption longth:  397
+We are in epoch i:  8
+Current input caption longth:  119
+Current input caption longth:  215
+Current input caption longth:  48
+Current input caption longth:  190
+Current input caption longth:  123
+Current input caption longth:  59
+Current input caption longth:  103
+Current input caption longth:  93
+Current input caption longth:  379
+Current input caption longth:  216
+We are in epoch i:  9
+Current input caption longth:  141
+Current input caption longth:  66
+Current input caption longth:  116
+Current input caption longth:  134
+Current input caption longth:  272
+Current input caption longth:  80
+Current input caption longth:  455
+Current input caption longth:  84
+Current input caption longth:  121
+Current input caption longth:  130
+We are in epoch i:  10
+Current input caption longth:  104
+Current input caption longth:  84
+Current input caption longth:  92
+Current input caption longth:  91
+Current input caption longth:  106
+Current input caption longth:  95
+Current input caption longth:  73
+Current input caption longth:  54
+Current input caption longth:  114
+Current input caption longth:  142
+We are in epoch i:  11
+We are in epoch:  4  out of total epoch:  5
+Current input caption longth:  98
+Current input caption longth:  131
+Current input caption longth:  57
+Current input caption longth:  131
+Current input caption longth:  68
+Current input caption longth:  249
+Current input caption longth:  100
+Current input caption longth:  88
+Current input caption longth:  231
+Current input caption longth:  60
+We are in epoch i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([10, 3, 224, 224]) torch.Size([10, 77])
+Current input caption longth:  150
+Current input caption longth:  46
+Current input caption longth:  63
+Current input caption longth:  99
+Current input caption longth:  53
+Current input caption longth:  66
+Current input caption longth:  77
+Current input caption longth:  143
+Current input caption longth:  111
+Current input caption longth:  85
+We are in epoch i:  1
+Current input caption longth:  97
+Current input caption longth:  71
+Current input caption longth:  259
+Current input caption longth:  53
+Current input caption longth:  95
+Current input caption longth:  111
+Current input caption longth:  130
+Current input caption longth:  119
+Current input caption longth:  34
+Current input caption longth:  123
+We are in epoch i:  2
+Current input caption longth:  114
+Current input caption longth:  74
+Current input caption longth:  84
+Current input caption longth:  85
+Current input caption longth:  72
+Current input caption longth:  103
+Current input caption longth:  29
+Current input caption longth:  277
+Current input caption longth:  92
+Current input caption longth:  77
+We are in epoch i:  3
+Current input caption longth:  1291
+Current input caption longth:  111
+Current input caption longth:  82
+Current input caption longth:  52
+Current input caption longth:  217
+Current input caption longth:  122
+Current input caption longth:  80
+Current input caption longth:  142
+Current input caption longth:  104
+Current input caption longth:  61
+We are in epoch i:  4
+Current input caption longth:  112
+Current input caption longth:  105
+Current input caption longth:  178
+Current input caption longth:  26
+Current input caption longth:  87
+Current input caption longth:  19
+Current input caption longth:  57
+Current input caption longth:  107
+Current input caption longth:  229
+Current input caption longth:  76
+We are in epoch i:  5
+Current input caption longth:  276
+Current input caption longth:  57
+Current input caption longth:  39
+Current input caption longth:  195
+Current input caption longth:  185
+Current input caption longth:  138
+Current input caption longth:  139
+Current input caption longth:  214
+Current input caption longth:  119
+Current input caption longth:  108
+We are in epoch i:  6
+Current input caption longth:  27
+Current input caption longth:  80
+Current input caption longth:  89
+Current input caption longth:  818
+Current input caption longth:  185
+Current input caption longth:  95
+Current input caption longth:  113
+Current input caption longth:  230
+Current input caption longth:  45
+Current input caption longth:  64
+We are in epoch i:  7
+Current input caption longth:  42
+Current input caption longth:  64
+Current input caption longth:  37
+Current input caption longth:  200
+Current input caption longth:  87
+Current input caption longth:  69
+Current input caption longth:  49
+Current input caption longth:  159
+Current input caption longth:  97
+Current input caption longth:  106
+We are in epoch i:  8
+Current input caption longth:  100
+Current input caption longth:  156
+Current input caption longth:  61
+Current input caption longth:  143
+Current input caption longth:  48
+Current input caption longth:  139
+Current input caption longth:  66
+Current input caption longth:  50
+Current input caption longth:  82
+Current input caption longth:  416
+We are in epoch i:  9
+Current input caption longth:  65
+Current input caption longth:  178
+Current input caption longth:  53
+Current input caption longth:  93
+Current input caption longth:  92
+Current input caption longth:  44
+Current input caption longth:  55
+Current input caption longth:  72
+Current input caption longth:  110
+Current input caption longth:  103
+We are in epoch i:  10
+Current input caption longth:  60
+Current input caption longth:  65
+Current input caption longth:  66
+Current input caption longth:  59
+Current input caption longth:  124
+Current input caption longth:  445
+Current input caption longth:  56
+Current input caption longth:  72
+Current input caption longth:  90
+Current input caption longth:  44
+We are in epoch i:  11

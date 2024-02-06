@@ -1,0 +1,316 @@
+2024-02-06 17:21:34,225 INFO    StreamThr :1505101 [internal.py:wandb_internal():86] W&B internal server running at pid: 1505101, started at: 2024-02-06 17:21:34.223930
+2024-02-06 17:21:34,230 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status
+2024-02-06 17:21:34,237 INFO    WriterThread:1505101 [datastore.py:open_for_write():87] open: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/run-8ji3td32.wandb
+2024-02-06 17:21:34,239 DEBUG   SenderThread:1505101 [sender.py:send():382] send: header
+2024-02-06 17:21:34,239 DEBUG   SenderThread:1505101 [sender.py:send():382] send: run
+2024-02-06 17:21:34,860 INFO    SenderThread:1505101 [dir_watcher.py:__init__():211] watching files in: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files
+2024-02-06 17:21:34,861 INFO    SenderThread:1505101 [sender.py:_start_run_threads():1136] run started: 8ji3td32 with start time 1707211294.223762
+2024-02-06 17:21:34,879 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: check_version
+2024-02-06 17:21:34,880 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: check_version
+2024-02-06 17:21:35,055 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: run_start
+2024-02-06 17:21:35,071 DEBUG   HandlerThread:1505101 [system_info.py:__init__():27] System info init
+2024-02-06 17:21:35,071 DEBUG   HandlerThread:1505101 [system_info.py:__init__():42] System info init done
+2024-02-06 17:21:35,071 INFO    HandlerThread:1505101 [system_monitor.py:start():194] Starting system monitor
+2024-02-06 17:21:35,071 INFO    SystemMonitor:1505101 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-06 17:21:35,072 INFO    HandlerThread:1505101 [system_monitor.py:probe():214] Collecting system info
+2024-02-06 17:21:35,077 INFO    SystemMonitor:1505101 [interfaces.py:start():190] Started cpu monitoring
+2024-02-06 17:21:35,080 INFO    SystemMonitor:1505101 [interfaces.py:start():190] Started disk monitoring
+2024-02-06 17:21:35,086 INFO    SystemMonitor:1505101 [interfaces.py:start():190] Started gpu monitoring
+2024-02-06 17:21:35,087 INFO    SystemMonitor:1505101 [interfaces.py:start():190] Started memory monitoring
+2024-02-06 17:21:35,088 INFO    SystemMonitor:1505101 [interfaces.py:start():190] Started network monitoring
+2024-02-06 17:21:35,130 DEBUG   HandlerThread:1505101 [system_info.py:probe():151] Probing system
+2024-02-06 17:21:35,140 DEBUG   HandlerThread:1505101 [gitlib.py:_init_repo():56] git repository is invalid
+2024-02-06 17:21:35,141 DEBUG   HandlerThread:1505101 [system_info.py:probe():199] Probing system done
+2024-02-06 17:21:35,141 DEBUG   HandlerThread:1505101 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-155-generic-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2024-02-06T09:21:35.130798', 'startedAt': '2024-02-06T09:21:34.198081', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/tune_clip.py', 'codePathLocal': 'tune_clip.py', 'codePath': 'tune_clip.py', 'host': 'gpu1-13', 'username': 'wenshuozhang', 'executable': '/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/bin/python', 'cpu_count': 64, 'cpu_count_logical': 64, 'cpu_freq': {'current': 3.1999374999999977, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 786.3739242553711, 'used': 172.02630233764648}}, 'gpu': 'NVIDIA A800-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 1007.5425262451172}}
+2024-02-06 17:21:35,151 INFO    HandlerThread:1505101 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-06 17:21:35,151 INFO    HandlerThread:1505101 [system_monitor.py:probe():227] Publishing system info
+2024-02-06 17:21:35,151 DEBUG   HandlerThread:1505101 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-06 17:21:35,862 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/conda-environment.yaml
+2024-02-06 17:21:37,277 DEBUG   HandlerThread:1505101 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-06 17:21:37,282 INFO    HandlerThread:1505101 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-06 17:21:37,292 DEBUG   SenderThread:1505101 [sender.py:send():382] send: files
+2024-02-06 17:21:37,292 INFO    SenderThread:1505101 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-06 17:21:37,297 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-06 17:21:37,297 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: python_packages
+2024-02-06 17:21:37,300 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:21:37,300 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:21:37,346 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:21:37,547 DEBUG   SenderThread:1505101 [sender.py:send():382] send: telemetry
+2024-02-06 17:21:37,863 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/conda-environment.yaml
+2024-02-06 17:21:37,863 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/wandb-metadata.json
+2024-02-06 17:21:37,863 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:21:37,863 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/requirements.txt
+2024-02-06 17:21:38,239 INFO    wandb-upload_0:1505101 [upload_job.py:push():131] Uploaded file /tmp/tmpvuj3vjktwandb/9vu7e0kw-wandb-metadata.json
+2024-02-06 17:21:39,557 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:21:39,862 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:21:44,562 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:21:49,565 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:21:51,868 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:21:52,488 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:21:52,489 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:21:52,490 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:21:54,722 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:21:59,723 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:05,688 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:05,874 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:06,875 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/config.yaml
+2024-02-06 17:22:07,367 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:22:07,486 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:22:07,487 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:22:07,876 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:09,877 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:11,082 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:11,880 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:13,881 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:15,881 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:16,510 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:17,881 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:19,882 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:21,795 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:21,886 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:22,367 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:22:22,486 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:22:22,487 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:22:23,884 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:25,884 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:27,174 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:27,885 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:29,885 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:31,890 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:32,267 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:33,890 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:35,089 DEBUG   SystemMonitor:1505101 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-06 17:22:35,090 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:22:35,894 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:37,368 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:37,394 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:22:37,540 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:22:37,540 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:22:37,899 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:39,911 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:41,919 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:42,483 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:43,921 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:45,922 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:47,548 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:47,922 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:49,923 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:51,923 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:52,371 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:22:52,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:22:52,497 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:22:52,708 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:53,924 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:55,937 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:57,776 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:22:57,941 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:22:59,937 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:01,938 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:03,024 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:03,941 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:05,092 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:23:05,945 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:07,371 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:23:07,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:23:07,497 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:23:07,948 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:08,120 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:09,949 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:11,956 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:13,516 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:13,957 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:15,957 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:17,958 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:18,856 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:19,965 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:21,971 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:22,371 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:23:22,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:23:22,497 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:23:23,974 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:24,350 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:25,977 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:27,981 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:29,741 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:29,982 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:31,986 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:33,986 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:34,915 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:35,093 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:23:35,988 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:37,371 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:23:37,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:23:37,497 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:23:37,987 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:39,990 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:40,099 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:41,992 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:43,994 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:45,215 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:46,005 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:48,010 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:50,007 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:50,373 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:52,011 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:52,378 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:23:52,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:23:52,497 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:23:54,015 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:55,452 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:23:56,015 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:23:58,019 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:00,023 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:00,615 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:02,027 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:04,027 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:05,096 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:24:05,715 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:06,027 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:07,371 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:24:07,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:24:07,497 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:24:08,028 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:10,028 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:10,898 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:12,029 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:14,029 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:16,030 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:16,165 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:18,043 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:20,043 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:21,408 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:22,044 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:22,371 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:24:22,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:24:22,497 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:24:24,044 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:26,045 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:26,669 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:28,045 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:30,046 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:31,777 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:32,046 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:34,047 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:35,108 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:24:36,047 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:37,272 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:37,371 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:24:37,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:24:37,500 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:24:38,047 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:40,048 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:42,050 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:42,363 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:44,050 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:46,051 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:47,396 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:48,051 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:50,052 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:52,052 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:52,376 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:24:52,406 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:52,497 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:24:52,497 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:24:54,053 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:56,053 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:24:57,509 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:24:58,054 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:00,055 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:02,056 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:02,811 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:04,060 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:05,099 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:25:06,060 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:07,372 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:25:07,506 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:25:07,507 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:25:07,962 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:08,061 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:10,061 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:12,062 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:13,015 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:14,066 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:16,069 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:18,069 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:18,423 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:20,069 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:22,070 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:22,372 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:25:22,499 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:25:22,500 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:25:23,515 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:24,070 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:26,076 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:28,071 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:28,577 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:30,072 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:32,072 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:33,702 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:34,073 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:35,103 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:25:36,073 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:37,372 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:25:37,498 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:25:37,498 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:25:38,079 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:38,846 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:40,079 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:42,079 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:43,934 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:44,082 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:46,083 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:48,083 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:48,977 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:50,084 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:52,085 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:52,379 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:25:52,498 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:25:52,498 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:25:53,996 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:25:54,085 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:56,090 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:58,086 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:25:59,101 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:00,086 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:02,090 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:04,090 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:04,303 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:05,101 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:26:06,091 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:07,372 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:26:07,498 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:26:07,498 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:26:08,091 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:09,350 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:10,092 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:12,092 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:14,092 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:14,688 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:16,093 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:18,093 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:20,041 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:20,094 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:22,094 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:22,372 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:26:22,501 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:26:22,501 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:26:24,095 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:25,321 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:26,095 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:28,096 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:30,097 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:30,382 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:32,097 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:34,104 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:35,102 DEBUG   SenderThread:1505101 [sender.py:send():382] send: stats
+2024-02-06 17:26:35,401 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:36,104 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:37,372 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-06 17:26:37,501 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-06 17:26:37,501 DEBUG   SenderThread:1505101 [sender.py:send_request():409] send_request: stop_status
+2024-02-06 17:26:38,105 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:40,105 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:40,929 DEBUG   HandlerThread:1505101 [handler.py:handle_request():146] handle_request: status_report
+2024-02-06 17:26:42,106 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:44,106 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log
+2024-02-06 17:26:46,107 INFO    Thread-13 :1505101 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_172134-8ji3td32/files/output.log

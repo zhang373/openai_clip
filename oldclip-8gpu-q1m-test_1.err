@@ -1,0 +1,103 @@
+++ date +%s
++ start=1707222028
++ nvidia-smi
++ module load anaconda3
++ local _mlredir=1
++ '[' -n '' ']'
++ case " $@ " in
++ '[' 1 -eq 0 ']'
++ _module_raw load anaconda3
++ module load cuda/12.2
++ local _mlredir=1
++ '[' -n '' ']'
++ case " $@ " in
++ '[' 1 -eq 0 ']'
++ _module_raw load cuda/12.2
++ module load slurm
++ local _mlredir=1
++ '[' -n '' ']'
++ case " $@ " in
++ '[' 1 -eq 0 ']'
++ _module_raw load slurm
++ source activate monodepth2
+++ _CONDA_ROOT=/hpc2ssd/softwares/anaconda3
+++ . /hpc2ssd/softwares/anaconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/hpc2ssd/softwares/anaconda3/bin/conda
++++ CONDA_EXE=/hpc2ssd/softwares/anaconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/hpc2ssd/softwares/anaconda3/bin/python
++++ CONDA_PYTHON_EXE=/hpc2ssd/softwares/anaconda3/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /hpc2ssd/softwares/anaconda3/bin/conda
+++++ dirname /hpc2ssd/softwares/anaconda3/bin
++++ PATH=/hpc2ssd/softwares/anaconda3/condabin:/hpc2ssd/softwares/cuda/cuda-12.2/bin:/hpc2ssd/softwares/anaconda3/bin:/hpc2hdd/home/wenshuozhang/.local/bin:/hpc2hdd/home/wenshuozhang/bin:/opt/slurm/bin:/usr/local/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/root/go/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate monodepth2
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate monodepth2
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate monodepth2
++++ /hpc2ssd/softwares/anaconda3/bin/conda shell.posix activate monodepth2
+++ ask_conda='PS1='\''(monodepth2) '\''
+export PATH='\''/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/bin:/hpc2ssd/softwares/anaconda3/condabin:/hpc2ssd/softwares/cuda/cuda-12.2/bin:/hpc2ssd/softwares/anaconda3/bin:/hpc2hdd/home/wenshuozhang/.local/bin:/hpc2hdd/home/wenshuozhang/bin:/opt/slurm/bin:/usr/local/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/root/go/bin'\''
+export CONDA_PREFIX='\''/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''monodepth2'\''
+export CONDA_PROMPT_MODIFIER='\''(monodepth2) '\''
+export CONDA_EXE='\''/hpc2ssd/softwares/anaconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/hpc2ssd/softwares/anaconda3/bin/python'\'''
+++ eval 'PS1='\''(monodepth2) '\''
+export PATH='\''/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/bin:/hpc2ssd/softwares/anaconda3/condabin:/hpc2ssd/softwares/cuda/cuda-12.2/bin:/hpc2ssd/softwares/anaconda3/bin:/hpc2hdd/home/wenshuozhang/.local/bin:/hpc2hdd/home/wenshuozhang/bin:/opt/slurm/bin:/usr/local/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/root/go/bin'\''
+export CONDA_PREFIX='\''/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''monodepth2'\''
+export CONDA_PROMPT_MODIFIER='\''(monodepth2) '\''
+export CONDA_EXE='\''/hpc2ssd/softwares/anaconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/hpc2ssd/softwares/anaconda3/bin/python'\'''
++++ PS1='(monodepth2) '
++++ export PATH=/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/bin:/hpc2ssd/softwares/anaconda3/condabin:/hpc2ssd/softwares/cuda/cuda-12.2/bin:/hpc2ssd/softwares/anaconda3/bin:/hpc2hdd/home/wenshuozhang/.local/bin:/hpc2hdd/home/wenshuozhang/bin:/opt/slurm/bin:/usr/local/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/root/go/bin
++++ PATH=/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/bin:/hpc2ssd/softwares/anaconda3/condabin:/hpc2ssd/softwares/cuda/cuda-12.2/bin:/hpc2ssd/softwares/anaconda3/bin:/hpc2hdd/home/wenshuozhang/.local/bin:/hpc2hdd/home/wenshuozhang/bin:/opt/slurm/bin:/usr/local/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/root/go/bin
++++ export CONDA_PREFIX=/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2
++++ CONDA_PREFIX=/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=monodepth2
++++ CONDA_DEFAULT_ENV=monodepth2
++++ export 'CONDA_PROMPT_MODIFIER=(monodepth2) '
++++ CONDA_PROMPT_MODIFIER='(monodepth2) '
++++ export CONDA_EXE=/hpc2ssd/softwares/anaconda3/bin/conda
++++ CONDA_EXE=/hpc2ssd/softwares/anaconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/hpc2ssd/softwares/anaconda3/bin/python
++++ CONDA_PYTHON_EXE=/hpc2ssd/softwares/anaconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ echo 'We are going to run the main file'
++ python tune_clip.py
+wandb: Currently logged in as: 1033187767 (dsa-mdil). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.2
+wandb: Run data is saved locally in /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_202037-ih97db7w
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run volcanic-paper-14
+wandb: ⭐️ View project at https://wandb.ai/dsa-mdil/openai_clip
+wandb: 🚀 View run at https://wandb.ai/dsa-mdil/openai_clip/runs/ih97db7w
