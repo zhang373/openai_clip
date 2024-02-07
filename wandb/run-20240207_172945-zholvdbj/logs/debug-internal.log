@@ -1,0 +1,224 @@
+2024-02-07 17:29:45,138 INFO    StreamThr :5077 [internal.py:wandb_internal():86] W&B internal server running at pid: 5077, started at: 2024-02-07 17:29:45.137418
+2024-02-07 17:29:45,140 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status
+2024-02-07 17:29:45,144 INFO    WriterThread:5077 [datastore.py:open_for_write():87] open: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/run-zholvdbj.wandb
+2024-02-07 17:29:45,145 DEBUG   SenderThread:5077 [sender.py:send():382] send: header
+2024-02-07 17:29:45,170 DEBUG   SenderThread:5077 [sender.py:send():382] send: run
+2024-02-07 17:29:45,726 INFO    SenderThread:5077 [dir_watcher.py:__init__():211] watching files in: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files
+2024-02-07 17:29:45,726 INFO    SenderThread:5077 [sender.py:_start_run_threads():1136] run started: zholvdbj with start time 1707298185.13697
+2024-02-07 17:29:45,742 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: check_version
+2024-02-07 17:29:45,742 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: check_version
+2024-02-07 17:29:45,855 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: run_start
+2024-02-07 17:29:45,866 DEBUG   HandlerThread:5077 [system_info.py:__init__():27] System info init
+2024-02-07 17:29:45,866 DEBUG   HandlerThread:5077 [system_info.py:__init__():42] System info init done
+2024-02-07 17:29:45,866 INFO    HandlerThread:5077 [system_monitor.py:start():194] Starting system monitor
+2024-02-07 17:29:45,866 INFO    SystemMonitor:5077 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-07 17:29:45,866 INFO    HandlerThread:5077 [system_monitor.py:probe():214] Collecting system info
+2024-02-07 17:29:45,868 INFO    SystemMonitor:5077 [interfaces.py:start():190] Started cpu monitoring
+2024-02-07 17:29:45,868 INFO    SystemMonitor:5077 [interfaces.py:start():190] Started disk monitoring
+2024-02-07 17:29:45,869 INFO    SystemMonitor:5077 [interfaces.py:start():190] Started gpu monitoring
+2024-02-07 17:29:45,870 INFO    SystemMonitor:5077 [interfaces.py:start():190] Started memory monitoring
+2024-02-07 17:29:45,871 INFO    SystemMonitor:5077 [interfaces.py:start():190] Started network monitoring
+2024-02-07 17:29:45,915 DEBUG   HandlerThread:5077 [system_info.py:probe():151] Probing system
+2024-02-07 17:29:45,921 DEBUG   HandlerThread:5077 [system_info.py:_probe_git():136] Probing git
+2024-02-07 17:29:45,932 DEBUG   HandlerThread:5077 [system_info.py:_probe_git():144] Probing git done
+2024-02-07 17:29:45,932 DEBUG   HandlerThread:5077 [system_info.py:probe():199] Probing system done
+2024-02-07 17:29:45,932 DEBUG   HandlerThread:5077 [system_monitor.py:probe():223] {'os': 'Linux-4.18.0-305.el8.x86_64-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2024-02-07T09:29:45.915324', 'startedAt': '2024-02-07T09:29:45.122376', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/tune_clip.py', 'codePathLocal': 'tune_clip.py', 'codePath': 'tune_clip.py', 'git': {'remote': None, 'commit': 'e4d9007ebd5915d15aba345804f95842373fa93b'}, 'email': '1033187767@qq.com', 'root': '/hpc2hdd/home/wenshuozhang/wsZHANG/hanlin', 'host': '606cc7c7c8f9', 'username': 'jovyan', 'executable': '/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/bin/python', 'cpu_count': 64, 'cpu_count_logical': 64, 'cpu_freq': {'current': 1.8771406249999996, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 2.503, 'min': 800.0, 'max': 3400.0}, {'current': 0.801, 'min': 800.0, 'max': 3400.0}, {'current': 2.103, 'min': 800.0, 'max': 3400.0}, {'current': 2.042, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 3.399, 'min': 800.0, 'max': 3400.0}, {'current': 1.601, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 3.399, 'min': 800.0, 'max': 3400.0}, {'current': 1.465, 'min': 800.0, 'max': 3400.0}, {'current': 3.399, 'min': 800.0, 'max': 3400.0}, {'current': 0.801, 'min': 800.0, 'max': 3400.0}, {'current': 1.98, 'min': 800.0, 'max': 3400.0}, {'current': 1.647, 'min': 800.0, 'max': 3400.0}, {'current': 3.4, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 1.484, 'min': 800.0, 'max': 3400.0}, {'current': 2.696, 'min': 800.0, 'max': 3400.0}, {'current': 2.248, 'min': 800.0, 'max': 3400.0}, {'current': 3.179, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 3.4, 'min': 800.0, 'max': 3400.0}, {'current': 2.403, 'min': 800.0, 'max': 3400.0}, {'current': 2.688, 'min': 800.0, 'max': 3400.0}, {'current': 3.4, 'min': 800.0, 'max': 3400.0}, {'current': 0.801, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 1.987, 'min': 800.0, 'max': 3400.0}, {'current': 2.411, 'min': 800.0, 'max': 3400.0}, {'current': 3.4, 'min': 800.0, 'max': 3400.0}, {'current': 1.62, 'min': 800.0, 'max': 3400.0}, {'current': 0.801, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 1.529, 'min': 800.0, 'max': 3400.0}, {'current': 1.502, 'min': 800.0, 'max': 3400.0}, {'current': 1.473, 'min': 800.0, 'max': 3400.0}, {'current': 1.5, 'min': 800.0, 'max': 3400.0}, {'current': 1.491, 'min': 800.0, 'max': 3400.0}, {'current': 1.53, 'min': 800.0, 'max': 3400.0}, {'current': 0.801, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 1.796, 'min': 800.0, 'max': 3400.0}, {'current': 1.573, 'min': 800.0, 'max': 3400.0}, {'current': 3.4, 'min': 800.0, 'max': 3400.0}, {'current': 1.511, 'min': 800.0, 'max': 3400.0}, {'current': 3.4, 'min': 800.0, 'max': 3400.0}, {'current': 1.52, 'min': 800.0, 'max': 3400.0}, {'current': 2.306, 'min': 800.0, 'max': 3400.0}, {'current': 1.54, 'min': 800.0, 'max': 3400.0}, {'current': 3.4, 'min': 800.0, 'max': 3400.0}, {'current': 2.578, 'min': 800.0, 'max': 3400.0}, {'current': 1.522, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 1.518, 'min': 800.0, 'max': 3400.0}, {'current': 1.5, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 1.572, 'min': 800.0, 'max': 3400.0}, {'current': 1.515, 'min': 800.0, 'max': 3400.0}, {'current': 0.8, 'min': 800.0, 'max': 3400.0}, {'current': 1.664, 'min': 800.0, 'max': 3400.0}, {'current': 1.602, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 8937.845703125, 'used': 683.4924163818359}}, 'gpu': 'NVIDIA A800-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 2014.7939262390137}}
+2024-02-07 17:29:45,934 INFO    HandlerThread:5077 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-07 17:29:45,934 INFO    HandlerThread:5077 [system_monitor.py:probe():227] Publishing system info
+2024-02-07 17:29:45,934 DEBUG   HandlerThread:5077 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-07 17:29:46,730 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/conda-environment.yaml
+2024-02-07 17:29:51,921 DEBUG   HandlerThread:5077 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-07 17:29:51,924 INFO    HandlerThread:5077 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-07 17:29:51,929 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:29:51,929 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-07 17:29:51,930 DEBUG   SenderThread:5077 [sender.py:send():382] send: files
+2024-02-07 17:29:51,931 INFO    SenderThread:5077 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-07 17:29:51,951 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-07 17:29:51,951 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:29:51,952 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: python_packages
+2024-02-07 17:29:51,958 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:29:51,973 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:29:52,303 DEBUG   SenderThread:5077 [sender.py:send():382] send: telemetry
+2024-02-07 17:29:52,736 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/conda-environment.yaml
+2024-02-07 17:29:52,736 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log
+2024-02-07 17:29:52,736 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/wandb-metadata.json
+2024-02-07 17:29:52,737 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/requirements.txt
+2024-02-07 17:29:52,753 INFO    wandb-upload_0:5077 [upload_job.py:push():131] Uploaded file /tmp/tmp0huvn1sbwandb/4t173eck-wandb-metadata.json
+2024-02-07 17:29:54,737 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log
+2024-02-07 17:29:56,315 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:01,321 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:02,743 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log
+2024-02-07 17:30:06,363 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:06,947 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:30:06,947 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:30:06,973 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:30:12,247 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:16,748 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log
+2024-02-07 17:30:17,930 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:18,748 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/config.yaml
+2024-02-07 17:30:21,947 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:30:21,947 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:30:21,973 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:30:23,172 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:24,753 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log
+2024-02-07 17:30:28,302 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:33,303 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:36,947 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:30:36,947 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:30:37,116 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:30:39,213 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:44,221 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:45,872 DEBUG   SystemMonitor:5077 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-07 17:30:45,874 DEBUG   SenderThread:5077 [sender.py:send():382] send: stats
+2024-02-07 17:30:49,875 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:30:51,947 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:30:51,951 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:30:51,996 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:30:55,249 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:31:00,254 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:31:05,259 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:31:06,947 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:31:06,948 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:31:06,989 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:31:11,259 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:31:12,829 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log
+2024-02-07 17:31:12,910 DEBUG   SenderThread:5077 [sender.py:send():382] send: exit
+2024-02-07 17:31:12,911 INFO    SenderThread:5077 [sender.py:send_exit():589] handling exit code: 1
+2024-02-07 17:31:12,911 INFO    SenderThread:5077 [sender.py:send_exit():591] handling runtime: 87
+2024-02-07 17:31:12,913 INFO    SenderThread:5077 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-07 17:31:12,914 INFO    SenderThread:5077 [sender.py:send_exit():597] send defer
+2024-02-07 17:31:12,914 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:12,914 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-07 17:31:12,914 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:12,914 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-07 17:31:12,914 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 1
+2024-02-07 17:31:12,914 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:12,914 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-07 17:31:12,915 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:12,936 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-07 17:31:12,936 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 2
+2024-02-07 17:31:12,936 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:12,937 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-07 17:31:12,937 INFO    HandlerThread:5077 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-07 17:31:12,937 DEBUG   SystemMonitor:5077 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-07 17:31:12,937 DEBUG   SystemMonitor:5077 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-07 17:31:12,940 INFO    HandlerThread:5077 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-07 17:31:12,940 INFO    HandlerThread:5077 [interfaces.py:finish():202] Joined disk monitor
+2024-02-07 17:31:13,096 INFO    HandlerThread:5077 [interfaces.py:finish():202] Joined gpu monitor
+2024-02-07 17:31:13,096 INFO    HandlerThread:5077 [interfaces.py:finish():202] Joined memory monitor
+2024-02-07 17:31:13,096 INFO    HandlerThread:5077 [interfaces.py:finish():202] Joined network monitor
+2024-02-07 17:31:13,099 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:13,099 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-07 17:31:13,099 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 3
+2024-02-07 17:31:13,099 DEBUG   SenderThread:5077 [sender.py:send():382] send: stats
+2024-02-07 17:31:13,100 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:13,100 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-07 17:31:13,100 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:13,100 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-07 17:31:13,100 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 4
+2024-02-07 17:31:13,100 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:13,100 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-07 17:31:13,100 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:13,100 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-07 17:31:13,101 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 5
+2024-02-07 17:31:13,101 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:13,101 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-07 17:31:13,101 DEBUG   SenderThread:5077 [sender.py:send():382] send: summary
+2024-02-07 17:31:13,102 INFO    SenderThread:5077 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-07 17:31:13,103 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:13,103 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-07 17:31:13,103 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 6
+2024-02-07 17:31:13,103 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:13,103 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-07 17:31:13,103 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:13,103 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-07 17:31:13,103 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 7
+2024-02-07 17:31:13,103 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:31:13,106 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:13,106 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-07 17:31:13,106 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:13,106 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-07 17:31:13,831 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/wandb-summary.json
+2024-02-07 17:31:13,907 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 17:31:14,416 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 8
+2024-02-07 17:31:14,416 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 17:31:14,416 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:14,416 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-07 17:31:14,417 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:14,417 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-07 17:31:14,417 INFO    SenderThread:5077 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-07 17:31:14,418 INFO    SenderThread:5077 [job_builder.py:_get_source_type():437] no source found
+2024-02-07 17:31:14,418 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 9
+2024-02-07 17:31:14,418 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:14,418 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-07 17:31:14,418 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:14,418 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-07 17:31:14,418 INFO    SenderThread:5077 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-07 17:31:14,830 INFO    Thread-13 :5077 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log
+2024-02-07 17:31:14,832 INFO    SenderThread:5077 [dir_watcher.py:finish():388] scan: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files
+2024-02-07 17:31:14,832 INFO    SenderThread:5077 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/conda-environment.yaml conda-environment.yaml
+2024-02-07 17:31:14,832 INFO    SenderThread:5077 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/wandb-metadata.json wandb-metadata.json
+2024-02-07 17:31:14,833 INFO    SenderThread:5077 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/config.yaml config.yaml
+2024-02-07 17:31:14,833 INFO    SenderThread:5077 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/requirements.txt requirements.txt
+2024-02-07 17:31:14,833 INFO    SenderThread:5077 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/wandb-summary.json wandb-summary.json
+2024-02-07 17:31:14,833 INFO    SenderThread:5077 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log output.log
+2024-02-07 17:31:14,833 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 10
+2024-02-07 17:31:14,834 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:14,835 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-07 17:31:14,835 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:14,836 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-07 17:31:14,836 INFO    SenderThread:5077 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 17:31:14,909 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 17:31:14,913 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 17:31:15,408 INFO    wandb-upload_1:5077 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/conda-environment.yaml
+2024-02-07 17:31:15,454 INFO    wandb-upload_2:5077 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/requirements.txt
+2024-02-07 17:31:15,643 INFO    wandb-upload_0:5077 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/config.yaml
+2024-02-07 17:31:15,674 INFO    wandb-upload_4:5077 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/output.log
+2024-02-07 17:31:15,720 INFO    wandb-upload_3:5077 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/files/wandb-summary.json
+2024-02-07 17:31:15,908 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 17:31:15,908 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 17:31:15,920 INFO    Thread-12 :5077 [sender.py:transition_state():617] send defer: 11
+2024-02-07 17:31:15,921 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:15,921 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-07 17:31:15,921 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:15,921 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-07 17:31:15,921 INFO    SenderThread:5077 [file_pusher.py:join():181] waiting for file pusher
+2024-02-07 17:31:15,921 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 12
+2024-02-07 17:31:15,921 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:15,921 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-07 17:31:15,921 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:15,921 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-07 17:31:15,921 INFO    SenderThread:5077 [file_stream.py:finish():595] file stream finish called
+2024-02-07 17:31:16,517 INFO    SenderThread:5077 [file_stream.py:finish():599] file stream finish is done
+2024-02-07 17:31:16,517 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 13
+2024-02-07 17:31:16,517 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:16,517 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-07 17:31:16,518 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:16,518 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-07 17:31:16,518 INFO    SenderThread:5077 [sender.py:transition_state():617] send defer: 14
+2024-02-07 17:31:16,518 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 17:31:16,518 INFO    HandlerThread:5077 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-07 17:31:16,519 DEBUG   SenderThread:5077 [sender.py:send():382] send: final
+2024-02-07 17:31:16,538 DEBUG   SenderThread:5077 [sender.py:send():382] send: footer
+2024-02-07 17:31:16,538 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: defer
+2024-02-07 17:31:16,538 INFO    SenderThread:5077 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-07 17:31:16,539 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 17:31:16,539 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 17:31:16,539 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: server_info
+2024-02-07 17:31:16,539 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-07 17:31:16,539 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-07 17:31:16,539 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:31:16,540 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: job_info
+2024-02-07 17:31:16,540 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 17:31:16,540 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 17:31:16,540 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: server_info
+2024-02-07 17:31:16,756 DEBUG   SenderThread:5077 [sender.py:send_request():409] send_request: job_info
+2024-02-07 17:31:16,757 INFO    MainThread:5077 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-02-07 17:31:16,757 INFO    MainThread:5077 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-02-07 17:31:16,757 INFO    MainThread:5077 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-02-07 17:31:16,757 DEBUG   HandlerThread:5077 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-07 17:31:16,757 INFO    HandlerThread:5077 [handler.py:finish():869] shutting down handler
+2024-02-07 17:31:17,540 INFO    WriterThread:5077 [datastore.py:close():296] close: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_172945-zholvdbj/run-zholvdbj.wandb
+2024-02-07 17:31:17,757 INFO    SenderThread:5077 [sender.py:finish():1572] shutting down sender
+2024-02-07 17:31:17,757 INFO    SenderThread:5077 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 17:31:17,757 INFO    SenderThread:5077 [file_pusher.py:join():181] waiting for file pusher

@@ -13,14 +13,15 @@
 start=`date +%s`
 
 nvidia-smi
-module ava
 module load anaconda3
 module load cuda/12.2
 module load slurm
-module ava
+
 
 source activate monodepth2
 
+
+echo "We are going to run the main file"
 python tune_clip.py
 
 # store the ending time

@@ -1,5 +1,5 @@
 ++ date +%s
-+ start=1707222028
++ start=1707306334
 + nvidia-smi
 + module load anaconda3
 + local _mlredir=1
@@ -95,9 +95,11 @@ export CONDA_PYTHON_EXE='\''/hpc2ssd/softwares/anaconda3/bin/python'\'''
 + echo 'We are going to run the main file'
 + python tune_clip.py
 wandb: Currently logged in as: 1033187767 (dsa-mdil). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.16.3 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
 wandb: Tracking run with wandb version 0.16.2
-wandb: Run data is saved locally in /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_202037-ih97db7w
+wandb: Run data is saved locally in /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_194618-w83ekx23
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run volcanic-paper-14
+wandb: Syncing run true-shadow-26
 wandb: ⭐️ View project at https://wandb.ai/dsa-mdil/openai_clip
-wandb: 🚀 View run at https://wandb.ai/dsa-mdil/openai_clip/runs/ih97db7w
+wandb: 🚀 View run at https://wandb.ai/dsa-mdil/openai_clip/runs/w83ekx23

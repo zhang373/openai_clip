@@ -1,0 +1,232 @@
+We finished the setting up process!
+The device we use are shown here:  cuda:0
+We have loaded Vit-B/32:
+Length of val_dataloader:  107
+train_dataloader is prepared and its length is:  1017712 1007534 10178
+ We are in epoch:  0  out of total epoch:  4
+We are in i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([96, 3, 224, 224]) torch.Size([96, 77])
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.010416666977107525} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+We are in i:  1
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.01458333432674408} {1: 0.004166666883975267, 5: 0.008333333767950535}
+
+We are in i:  2
+
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.008333333767950535} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+We are in i:  3
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.008333333767950535} {1: 0.0020833334419876337, 5: 0.01666666753590107}
+We are in i:  4
+
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.004166666883975267} {1: 0.0020833334419876337, 5: 0.008333333767950535}
+We are in i:  5
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.01458333432674408} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+We are in i:  6
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.008333333767950535} {1: 0.0, 5: 0.008333333767950535}
+ We are in epoch:  1  out of total epoch:  4
+We are in i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([96, 3, 224, 224]) torch.Size([96, 77])
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.01666666753590107} {1: 0.0020833334419876337, 5: 0.008333333767950535}
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  1
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.010416666977107525} {1: 0.0, 5: 0.010416666977107525}
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  2
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.01666666753590107} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  3
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.01250000111758709} {1: 0.004166666883975267, 5: 0.01458333432674408}
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  4
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.008333333767950535} {1: 0.0020833334419876337, 5: 0.01250000111758709}
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  5
+i in enval process:  0
+i in enval process:  1
+
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.010416666977107525} {1: 0.0020833334419876337, 5: 0.01250000111758709}
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  6
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.01250000111758709} {1: 0.004166666883975267, 5: 0.01250000111758709}
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+ We are in epoch:  2  out of total epoch:  4
+We are in i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([96, 3, 224, 224]) torch.Size([96, 77])
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.006250000558793545, 5: 0.01458333432674408} {1: 0.004166666883975267, 5: 0.01458333432674408}
+We are in i:  1
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.004166666883975267} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+We are in i:  2
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.010416666977107525} {1: 0.0020833334419876337, 5: 0.01458333432674408}
+We are in i:  3
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.01458333432674408} {1: 0.0020833334419876337, 5: 0.008333333767950535}
+We are in i:  4
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.010416666977107525} {1: 0.0, 5: 0.010416666977107525}
+We are in i:  5
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.008333333767950535} {1: 0.004166666883975267, 5: 0.008333333767950535}
+We are in i:  6
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.01458333432674408} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+ We are in epoch:  3  out of total epoch:  4
+We are in i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([96, 3, 224, 224]) torch.Size([96, 77])
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.006250000558793545} {1: 0.006250000558793545, 5: 0.008333333767950535}
+Checkpoint saved at epoch 4 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_4.pth
+We are in i:  1
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.006250000558793545} {1: 0.0, 5: 0.008333333767950535}
+Checkpoint saved at epoch 4 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_4.pth
+We are in i:  2
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.008333333767950535} {1: 0.0020833334419876337, 5: 0.008333333767950535}
+Checkpoint saved at epoch 4 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_4.pth
+We are in i:  3
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.01250000111758709} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+Checkpoint saved at epoch 4 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_4.pth
+We are in i:  4
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.01250000111758709} {1: 0.0020833334419876337, 5: 0.01458333432674408}
+Checkpoint saved at epoch 4 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_4.pth
+We are in i:  5
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.008333333767950535} {1: 0.0020833334419876337, 5: 0.008333333767950535}
+Checkpoint saved at epoch 4 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_4.pth
+We are in i:  6
+i in enval process:  0
+i in enval process:  1
+i in enval process:  2
+i in enval process:  3
+i in enval process:  4
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.008333333767950535} {1: 0.0020833334419876337, 5: 0.006250000558793545}
+Checkpoint saved at epoch 4 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_4.pth

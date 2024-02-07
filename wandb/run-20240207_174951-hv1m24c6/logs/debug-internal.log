@@ -1,0 +1,1419 @@
+2024-02-07 17:49:51,888 INFO    StreamThr :9225 [internal.py:wandb_internal():86] W&B internal server running at pid: 9225, started at: 2024-02-07 17:49:51.886484
+2024-02-07 17:49:51,891 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status
+2024-02-07 17:49:51,894 INFO    WriterThread:9225 [datastore.py:open_for_write():87] open: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/run-hv1m24c6.wandb
+2024-02-07 17:49:51,895 DEBUG   SenderThread:9225 [sender.py:send():382] send: header
+2024-02-07 17:49:51,923 DEBUG   SenderThread:9225 [sender.py:send():382] send: run
+2024-02-07 17:49:52,529 INFO    SenderThread:9225 [dir_watcher.py:__init__():211] watching files in: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files
+2024-02-07 17:49:52,529 INFO    SenderThread:9225 [sender.py:_start_run_threads():1136] run started: hv1m24c6 with start time 1707299391.886203
+2024-02-07 17:49:52,546 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: check_version
+2024-02-07 17:49:52,546 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: check_version
+2024-02-07 17:49:52,698 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: run_start
+2024-02-07 17:49:52,718 DEBUG   HandlerThread:9225 [system_info.py:__init__():27] System info init
+2024-02-07 17:49:52,718 DEBUG   HandlerThread:9225 [system_info.py:__init__():42] System info init done
+2024-02-07 17:49:52,718 INFO    HandlerThread:9225 [system_monitor.py:start():194] Starting system monitor
+2024-02-07 17:49:52,718 INFO    SystemMonitor:9225 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-07 17:49:52,719 INFO    HandlerThread:9225 [system_monitor.py:probe():214] Collecting system info
+2024-02-07 17:49:52,720 INFO    SystemMonitor:9225 [interfaces.py:start():190] Started cpu monitoring
+2024-02-07 17:49:52,726 INFO    SystemMonitor:9225 [interfaces.py:start():190] Started disk monitoring
+2024-02-07 17:49:52,744 INFO    SystemMonitor:9225 [interfaces.py:start():190] Started gpu monitoring
+2024-02-07 17:49:52,745 INFO    SystemMonitor:9225 [interfaces.py:start():190] Started memory monitoring
+2024-02-07 17:49:52,746 INFO    SystemMonitor:9225 [interfaces.py:start():190] Started network monitoring
+2024-02-07 17:49:52,811 DEBUG   HandlerThread:9225 [system_info.py:probe():151] Probing system
+2024-02-07 17:49:52,821 DEBUG   HandlerThread:9225 [system_info.py:_probe_git():136] Probing git
+2024-02-07 17:49:52,859 DEBUG   HandlerThread:9225 [system_info.py:_probe_git():144] Probing git done
+2024-02-07 17:49:52,859 DEBUG   HandlerThread:9225 [system_info.py:probe():199] Probing system done
+2024-02-07 17:49:52,859 DEBUG   HandlerThread:9225 [system_monitor.py:probe():223] {'os': 'Linux-4.18.0-305.el8.x86_64-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2024-02-07T09:49:52.811139', 'startedAt': '2024-02-07T09:49:51.870993', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/tune_clip.py', 'codePathLocal': 'tune_clip.py', 'codePath': 'tune_clip.py', 'git': {'remote': None, 'commit': 'e4d9007ebd5915d15aba345804f95842373fa93b'}, 'email': '1033187767@qq.com', 'root': '/hpc2hdd/home/wenshuozhang/wsZHANG/hanlin', 'host': '606cc7c7c8f9', 'username': 'jovyan', 'executable': '/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/bin/python', 'cpu_count': 64, 'cpu_count_logical': 64, 'cpu_freq': {'current': 3.2032031250000026, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.199, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.182, 'min': 800.0, 'max': 3400.0}, {'current': 3.196, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.171, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.166, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.184, 'min': 800.0, 'max': 3400.0}, {'current': 3.198, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.2, 'min': 800.0, 'max': 3400.0}, {'current': 3.198, 'min': 800.0, 'max': 3400.0}, {'current': 3.226, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.221, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.22, 'min': 800.0, 'max': 3400.0}, {'current': 3.154, 'min': 800.0, 'max': 3400.0}, {'current': 3.222, 'min': 800.0, 'max': 3400.0}, {'current': 3.228, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.177, 'min': 800.0, 'max': 3400.0}, {'current': 3.223, 'min': 800.0, 'max': 3400.0}, {'current': 3.221, 'min': 800.0, 'max': 3400.0}, {'current': 3.229, 'min': 800.0, 'max': 3400.0}, {'current': 3.226, 'min': 800.0, 'max': 3400.0}, {'current': 3.21, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.225, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.224, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.178, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.221, 'min': 800.0, 'max': 3400.0}, {'current': 3.222, 'min': 800.0, 'max': 3400.0}, {'current': 3.21, 'min': 800.0, 'max': 3400.0}, {'current': 3.22, 'min': 800.0, 'max': 3400.0}, {'current': 3.226, 'min': 800.0, 'max': 3400.0}, {'current': 3.174, 'min': 800.0, 'max': 3400.0}, {'current': 3.227, 'min': 800.0, 'max': 3400.0}, {'current': 3.221, 'min': 800.0, 'max': 3400.0}, {'current': 3.226, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 8937.845703125, 'used': 683.4924507141113}}, 'gpu': 'NVIDIA A800-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 2014.7939262390137}}
+2024-02-07 17:49:52,861 INFO    HandlerThread:9225 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-07 17:49:52,861 INFO    HandlerThread:9225 [system_monitor.py:probe():227] Publishing system info
+2024-02-07 17:49:52,861 DEBUG   HandlerThread:9225 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-07 17:49:53,531 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/conda-environment.yaml
+2024-02-07 17:49:58,739 DEBUG   HandlerThread:9225 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-07 17:49:58,741 INFO    HandlerThread:9225 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-07 17:49:58,746 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:49:58,746 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-07 17:49:58,748 DEBUG   SenderThread:9225 [sender.py:send():382] send: files
+2024-02-07 17:49:58,748 INFO    SenderThread:9225 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-07 17:49:58,766 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-07 17:49:58,766 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:49:58,767 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: python_packages
+2024-02-07 17:49:58,770 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:49:58,774 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:49:59,194 DEBUG   SenderThread:9225 [sender.py:send():382] send: telemetry
+2024-02-07 17:49:59,533 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/conda-environment.yaml
+2024-02-07 17:49:59,533 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/wandb-metadata.json
+2024-02-07 17:49:59,533 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/requirements.txt
+2024-02-07 17:49:59,534 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:50:00,204 INFO    wandb-upload_0:9225 [upload_job.py:push():131] Uploaded file /tmp/tmpq3i8fvx1wandb/1psd6nly-wandb-metadata.json
+2024-02-07 17:50:01,536 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:50:03,203 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:08,703 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:09,543 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:50:13,703 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:13,911 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:50:13,912 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:50:14,014 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:50:19,129 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:23,548 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:50:24,351 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:25,548 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/config.yaml
+2024-02-07 17:50:28,780 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:50:28,781 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:50:28,783 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:50:29,836 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:31,554 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:50:34,880 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:39,885 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:43,784 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:50:43,784 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:50:43,789 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:50:45,010 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:50,019 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:52,750 DEBUG   SystemMonitor:9225 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-07 17:50:52,752 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:50:55,757 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:50:58,788 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:50:58,789 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:50:58,826 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:51:01,051 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:06,056 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:11,064 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:13,784 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:51:13,784 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:51:13,826 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:51:16,095 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:19,617 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:51:21,765 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:22,753 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:51:26,771 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:28,784 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:51:28,786 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:51:28,788 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:51:32,104 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:37,111 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:42,117 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:43,797 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:51:43,797 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:51:43,797 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:51:48,024 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:52,758 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:51:53,759 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:58,766 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:51:58,791 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:51:58,791 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:51:58,792 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:52:04,010 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:09,015 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:11,683 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:52:13,793 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:52:13,794 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:52:13,794 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:52:14,087 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:19,090 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:21,691 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:52:22,759 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:52:24,760 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:28,791 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:52:28,795 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:52:28,795 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:52:29,704 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:52:30,055 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:35,063 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:39,715 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:52:40,166 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:43,791 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:52:43,795 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:52:43,795 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:52:46,042 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:49,724 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:52:51,959 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:52,764 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:52:57,766 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:52:58,793 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:52:58,795 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:52:58,798 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:52:59,737 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:53:03,036 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:08,041 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:13,046 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:13,797 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:53:13,797 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:53:13,797 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:53:18,075 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:22,762 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:53:23,764 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:28,770 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:28,801 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:53:28,801 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:53:28,802 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:53:34,112 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:39,117 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:43,799 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:53:43,799 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:53:43,839 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:53:45,029 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:47,802 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:53:50,766 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:52,788 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:53:55,796 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:53:58,802 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:53:58,802 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:53:58,802 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:54:01,055 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:06,063 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:11,080 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:13,808 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:54:13,826 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:54:13,850 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:54:16,097 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:21,104 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:22,766 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:54:26,770 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:28,805 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:54:28,810 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:54:28,846 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:54:32,067 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:33,869 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:54:38,036 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:43,276 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:43,804 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:54:43,804 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:54:43,807 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:54:43,887 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:54:48,980 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:49,891 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:54:52,767 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:54:54,769 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:54:57,898 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:54:58,807 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:54:58,808 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:54:58,808 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:55:00,035 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:05,036 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:05,908 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:55:07,909 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:55:10,515 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:13,808 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:55:13,830 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:55:13,830 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:55:16,142 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:21,148 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:22,774 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:55:26,777 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:28,808 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:55:28,808 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:55:28,850 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:55:32,013 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:37,013 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:42,019 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:43,808 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:55:43,809 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:55:43,854 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:55:48,010 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:51,973 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:55:52,782 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:55:53,783 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:53,966 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:55:58,789 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:55:58,808 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:55:58,809 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:55:58,817 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:56:01,973 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:56:04,566 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:07,984 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:56:10,248 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:13,813 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:56:13,814 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:56:13,823 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:56:15,996 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:56:16,043 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:21,622 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:22,015 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:56:22,779 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:56:26,785 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:28,809 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:56:28,810 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:56:28,820 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:56:32,013 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:56:32,140 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:37,146 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:42,152 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:43,810 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:56:43,810 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:56:43,822 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:56:48,037 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:52,777 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:56:53,780 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:58,779 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:56:58,810 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:56:58,811 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:56:58,854 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:57:04,027 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:09,036 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:13,810 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:57:13,811 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:57:13,852 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:57:14,055 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:18,064 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:57:19,075 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:22,782 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:57:24,786 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:26,081 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:57:28,814 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:57:28,814 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:57:28,828 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:57:30,153 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:34,087 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:57:36,079 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:40,104 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:57:41,796 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:43,814 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:57:43,815 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:57:43,828 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:57:47,557 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:48,117 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:57:52,566 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:52,779 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:57:56,129 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:57:58,173 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:57:58,815 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:57:58,817 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:57:58,829 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:58:04,056 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:09,065 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:13,820 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:58:13,820 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:58:13,860 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:58:15,047 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:20,054 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:22,781 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:58:25,784 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:28,822 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:58:28,822 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:58:28,865 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:58:31,121 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:36,131 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:41,146 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:42,199 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:58:43,823 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:58:43,824 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:58:43,836 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:58:44,203 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:58:47,078 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:52,217 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:58:52,323 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:52,782 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:58:58,046 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:58:58,226 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:58:58,821 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:58:58,821 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:58:58,839 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:59:03,063 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:04,232 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:59:06,230 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:59:08,788 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:12,233 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:59:13,821 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:59:13,821 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:59:13,836 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:59:14,141 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:19,147 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:22,239 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 17:59:22,787 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:59:24,791 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:28,823 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:59:28,823 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:59:28,837 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:59:30,099 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:35,109 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:40,113 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:43,822 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:59:43,827 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:59:43,863 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 17:59:46,082 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:51,093 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:52,788 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 17:59:56,798 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 17:59:58,822 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 17:59:58,828 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 17:59:58,863 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:00:02,081 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:07,091 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:08,303 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:00:12,446 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:13,822 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:00:13,822 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:00:13,842 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:00:16,317 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:00:17,673 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:22,791 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:00:22,792 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:24,326 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:00:27,799 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:28,824 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:00:28,828 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:00:28,846 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:00:30,331 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:00:33,447 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:38,341 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:00:39,199 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:43,827 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:00:43,827 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:00:43,847 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:00:45,063 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:46,344 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:00:50,625 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:52,799 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:00:55,808 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:00:58,828 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:00:58,829 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:00:58,857 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:01:01,114 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:06,125 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:11,133 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:13,828 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:01:13,828 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:01:13,869 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:01:17,125 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:22,145 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:22,796 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:01:27,805 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:28,829 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:01:28,833 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:01:28,878 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:01:33,038 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:34,403 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:01:38,087 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:42,411 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:01:43,682 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:43,837 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:01:43,838 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:01:43,861 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:01:48,420 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:01:49,477 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:52,798 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:01:54,429 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:01:55,167 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:01:58,839 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:01:58,839 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:01:58,883 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:02:00,913 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:02,440 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:02:05,963 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:11,185 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:12,463 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:02:13,844 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:02:13,844 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:02:13,865 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:02:17,152 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:22,159 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:22,803 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:02:27,811 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:28,854 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:02:28,854 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:02:28,900 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:02:33,158 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:38,163 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:43,162 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:43,840 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:02:43,840 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:02:43,887 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:02:49,097 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:52,802 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:02:54,806 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:02:58,527 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:02:58,841 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:02:58,841 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:02:58,870 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:03:00,144 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:05,152 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:06,540 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:03:10,314 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:13,845 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:03:13,845 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:03:13,890 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:03:14,557 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:03:16,118 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:20,568 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:03:21,823 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:22,802 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:03:26,579 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:03:27,673 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:28,586 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:03:28,845 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:03:28,845 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:03:28,887 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:03:33,134 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:38,593 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:03:39,132 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:43,846 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:03:43,849 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:03:43,885 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:03:45,090 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:50,097 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:52,809 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:03:55,816 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:03:58,849 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:03:58,849 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:03:58,890 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:04:01,153 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:06,159 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:11,161 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:13,850 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:04:13,857 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:04:13,893 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:04:17,131 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:22,134 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:22,841 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:04:24,657 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:04:27,851 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:28,851 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:04:28,855 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:04:28,897 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:04:32,673 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:04:33,292 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:38,685 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:04:39,027 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:43,852 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:04:43,852 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:04:43,893 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:04:44,109 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:46,704 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:04:49,906 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:52,710 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:04:52,808 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:04:54,713 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:04:55,811 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:04:58,852 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:04:58,853 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:04:58,894 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:05:01,164 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:02,721 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:05:07,120 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:12,130 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:13,871 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:05:13,871 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:05:13,914 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:05:18,118 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:22,814 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:05:23,816 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:28,825 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:28,872 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:05:28,872 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:05:28,914 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:05:34,186 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:39,196 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:43,874 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:05:43,874 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:05:43,921 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:05:45,144 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:48,803 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:05:51,067 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:52,811 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:05:56,819 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:05:58,815 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:05:58,877 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:05:58,885 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:05:58,919 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:06:02,146 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:04,824 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:06:07,927 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:12,835 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:06:13,599 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:13,877 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:06:13,877 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:06:13,919 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:06:18,836 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:06:19,420 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:22,816 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:06:24,817 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:28,842 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:06:28,880 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:06:28,881 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:06:28,922 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:06:30,147 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:35,152 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:40,160 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:43,880 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:06:43,881 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:06:43,922 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:06:46,141 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:51,151 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:52,821 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:06:56,828 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:06:58,881 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:06:58,881 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:06:58,922 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:07:02,197 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:07,212 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:12,224 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:13,881 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:07:13,881 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:07:13,923 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:07:16,921 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:07:18,046 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:22,825 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:07:23,050 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:24,933 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:07:28,057 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:28,881 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:07:28,882 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:07:28,922 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:07:30,943 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:07:33,798 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:36,956 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:07:39,529 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:43,904 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:07:43,910 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:07:43,910 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:07:44,964 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:07:45,213 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:50,219 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:52,826 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:07:54,975 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:07:55,998 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:07:58,889 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:07:58,891 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:07:58,929 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:08:01,217 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:06,223 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:11,237 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:13,887 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:08:13,888 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:08:13,931 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:08:17,196 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:22,195 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:22,828 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:08:27,838 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:28,900 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:08:28,900 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:08:28,933 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:08:33,194 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:38,198 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:41,029 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:08:43,873 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:43,892 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:08:43,892 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:08:43,938 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:08:49,039 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:08:49,188 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:52,834 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:08:54,840 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:08:57,043 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:08:58,893 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:08:58,893 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:08:58,934 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:09:00,149 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:03,047 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:09:05,709 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:09,049 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:09:11,051 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:09:11,291 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:13,896 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:09:13,896 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:09:13,937 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:09:17,198 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:21,055 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:09:22,809 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:22,842 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:09:27,847 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:28,896 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:09:28,903 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:09:28,938 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:09:33,203 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:38,210 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:43,216 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:43,896 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:09:43,898 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:09:43,938 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:09:49,139 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:52,836 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:09:54,840 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:09:58,899 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:09:58,899 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:09:58,940 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:10:00,144 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:05,147 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:07,113 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:10:10,608 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:13,943 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:10:13,943 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:10:13,944 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:10:15,128 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:10:16,208 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:21,133 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:10:21,732 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:22,839 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:10:23,134 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:10:26,850 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:28,903 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:10:28,903 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:10:28,945 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:10:29,140 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:10:32,171 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:35,151 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:10:37,159 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:10:38,066 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:43,070 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:43,903 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:10:43,904 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:10:43,944 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:10:45,174 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:10:48,197 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:52,848 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:10:53,852 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:58,862 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:10:58,905 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:10:58,906 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:10:58,907 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:11:04,207 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:09,215 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:13,905 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:11:13,906 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:11:13,951 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:11:15,169 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:20,178 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:22,846 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:11:25,857 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:28,911 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:11:28,912 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:11:28,951 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:11:31,244 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:11:31,830 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:36,840 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:39,255 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:11:42,823 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:43,915 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:11:43,920 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:11:43,920 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:11:47,259 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:11:48,315 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:52,848 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:11:53,272 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:11:53,849 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:58,855 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:11:58,916 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:11:58,917 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:11:58,917 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:12:01,281 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:12:04,091 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:09,105 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:11,284 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:12:13,914 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:12:13,917 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:12:13,922 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:12:15,391 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:20,394 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:22,850 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:12:25,856 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:28,914 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:12:28,917 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:12:28,918 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:12:31,219 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:36,230 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:41,234 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:43,916 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:12:43,918 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:12:43,918 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:12:46,238 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:51,256 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:52,854 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:12:56,863 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:12:57,342 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:12:58,918 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:12:58,918 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:12:58,919 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:13:02,235 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:05,360 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:13:07,891 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:13,378 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:13:13,713 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:13,920 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:13:13,921 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:13:13,962 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:13:19,387 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:13:19,644 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:22,858 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:13:24,863 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:27,390 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:13:28,923 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:13:28,923 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:13:28,924 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:13:30,160 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:35,359 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:35,396 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:13:40,362 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:43,925 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:13:43,927 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:13:43,927 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:13:46,163 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:51,175 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:52,867 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:13:56,873 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:13:58,923 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:13:58,931 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:13:58,933 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:14:02,160 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:07,167 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:12,181 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:13,938 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:14:13,940 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:14:13,941 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:14:17,251 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:22,617 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:22,875 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:14:23,479 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:14:27,894 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:28,926 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:14:28,935 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:14:28,935 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:14:31,485 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:14:33,317 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:37,494 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:14:39,088 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:43,496 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:14:43,929 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:14:43,939 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:14:43,939 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:14:44,177 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:49,179 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:51,505 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:14:52,870 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:14:54,872 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:14:58,930 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:14:58,939 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:14:58,939 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:14:59,514 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:15:00,225 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:05,241 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:10,246 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:13,934 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:15:13,943 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:15:13,944 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:15:16,198 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:21,202 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:22,880 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:15:26,886 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:28,933 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:15:28,941 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:15:28,946 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:15:32,257 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:37,259 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:42,263 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:43,934 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:15:43,949 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:15:43,950 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:15:47,325 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:47,586 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:15:52,337 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:52,883 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:15:55,601 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:15:57,844 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:15:58,938 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:15:58,948 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:15:58,948 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:16:01,618 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:16:03,607 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:09,355 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:09,632 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:16:13,942 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:16:13,956 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:16:13,956 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:16:15,223 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:15,636 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:16:20,231 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:22,886 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:16:25,722 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:26,647 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:16:28,944 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:16:28,954 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:16:28,955 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:16:31,240 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:36,247 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:41,257 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:43,941 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:16:43,951 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:16:43,951 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:16:47,208 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:52,210 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:52,888 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:16:57,898 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:16:58,942 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:16:58,952 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:16:58,952 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:17:03,190 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:08,196 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:12,715 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:17:13,753 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:13,944 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:17:13,953 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:17:13,957 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:17:18,828 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:19,724 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:17:22,893 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:17:23,894 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:25,740 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:17:28,921 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:28,944 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:17:28,954 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:17:28,954 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:17:33,757 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:17:34,253 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:39,765 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:17:40,041 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:43,944 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:17:43,955 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:17:43,956 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:17:45,179 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:49,777 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:17:51,157 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:52,909 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:17:56,926 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:17:58,948 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:17:58,955 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:17:58,955 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:18:02,199 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:07,201 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:12,210 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:13,948 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:18:13,962 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:18:13,964 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:18:18,186 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:22,896 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:18:23,898 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:28,905 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:28,950 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:18:28,962 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:18:28,962 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:18:34,238 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:36,839 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:18:39,999 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:43,950 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:18:43,965 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:18:43,965 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:18:44,852 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:18:45,265 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:50,833 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:52,861 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:18:52,898 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:18:55,904 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:18:58,870 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:18:58,950 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:18:58,968 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:18:58,968 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:19:01,264 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:04,880 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:19:06,335 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:11,336 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:13,953 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:19:13,969 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:19:13,969 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:19:14,887 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:19:17,200 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:22,203 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:22,906 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:19:27,911 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:28,959 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:19:28,969 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:19:28,969 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:19:33,198 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:38,202 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:43,220 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:43,961 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:19:43,975 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:19:43,979 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:19:49,212 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:52,911 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:19:54,915 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:19:58,961 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:19:58,978 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:19:58,979 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:20:00,628 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:02,953 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:20:05,629 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:10,965 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:20:11,034 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:13,965 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:20:13,980 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:20:13,980 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:20:16,723 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:16,970 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:20:22,403 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:22,910 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:20:22,974 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:20:27,919 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:28,965 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:20:28,980 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:20:28,980 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:20:30,992 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:20:33,250 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:38,394 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:38,997 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:20:43,404 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:43,970 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:20:43,991 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:20:43,995 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:20:49,255 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:52,911 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:20:54,917 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:20:58,969 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:20:58,982 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:20:58,985 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:21:00,203 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:05,200 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:10,200 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:13,970 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:21:13,982 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:21:13,983 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:21:15,209 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:20,211 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:22,918 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:21:26,206 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:27,099 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:21:28,973 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:21:28,987 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:21:28,987 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:21:31,237 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:35,108 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:21:36,408 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:41,114 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:21:42,123 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:43,974 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:21:44,020 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:21:44,020 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:21:47,124 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:21:47,801 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:52,915 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:21:52,928 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:55,137 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:21:57,930 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:21:58,974 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:21:58,989 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:21:58,989 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:22:03,150 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:22:03,692 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:08,705 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:13,707 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:13,976 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:22:13,995 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:22:13,995 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:22:19,281 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:22,921 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:22:24,926 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:28,976 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:22:28,989 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:22:28,990 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:22:30,215 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:35,221 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:40,228 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:43,980 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:22:43,993 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:22:43,993 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:22:45,245 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:50,619 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:51,218 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:22:52,921 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:22:55,923 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:22:58,976 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:22:58,995 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:22:58,995 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:22:59,223 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:23:01,321 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:05,234 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:23:06,435 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:12,152 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:13,242 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:23:13,978 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:23:13,994 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:23:13,997 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:23:17,854 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:19,247 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:23:22,859 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:22,924 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:23:28,634 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:28,984 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:23:28,995 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:23:28,995 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:23:29,255 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:23:34,268 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:39,278 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:43,982 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:23:43,997 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:23:43,997 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:23:44,297 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:49,304 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:52,928 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:23:54,933 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:23:58,983 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:23:59,020 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:23:59,023 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:24:00,217 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:05,228 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:10,226 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:13,982 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:24:13,996 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:24:13,996 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:24:15,626 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:17,345 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:24:20,633 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:22,930 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:24:25,352 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:24:25,937 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:28,985 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:24:28,999 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:24:29,000 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:24:31,361 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:24:31,397 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:37,063 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:37,373 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:24:42,075 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:43,985 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:24:44,000 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:24:44,005 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:24:45,381 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:24:47,260 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:52,270 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:52,931 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:24:55,389 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:24:57,450 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:24:58,986 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:24:59,010 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:24:59,011 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:25:03,285 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:08,288 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:13,302 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:13,986 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:25:14,010 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:25:14,011 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:25:19,278 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:22,935 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:25:24,942 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:28,986 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:25:29,012 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:25:29,014 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:25:30,250 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:35,264 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:40,267 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:43,447 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:25:43,994 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:25:44,013 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:25:44,017 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:25:46,236 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:51,457 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:25:51,553 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:52,938 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:25:57,238 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:25:57,469 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:25:58,992 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:25:59,011 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:25:59,011 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:26:02,937 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:03,479 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:26:07,944 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:11,487 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:26:13,666 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:13,993 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:26:14,013 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:26:14,013 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:26:18,793 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:21,504 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:26:22,944 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:26:23,945 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:28,952 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:28,993 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:26:29,013 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:26:29,013 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:26:34,271 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:39,283 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:43,993 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:26:44,013 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:26:44,014 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:26:45,663 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:50,671 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:52,949 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:26:55,953 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:26:58,993 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:26:59,017 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:26:59,021 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:27:01,345 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:06,531 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:07,600 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:27:11,536 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:13,994 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:27:14,019 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:27:14,019 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:27:15,616 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:27:17,297 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:22,474 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:22,949 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:27:23,620 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:27:28,215 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:28,997 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:27:29,020 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:27:29,020 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:27:29,632 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:27:33,321 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:35,641 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:27:37,642 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:27:38,804 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:43,805 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:43,997 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:27:44,058 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:27:44,058 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:27:45,648 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:27:49,332 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:52,971 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:27:54,973 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:27:58,997 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:27:59,020 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:27:59,021 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:28:00,234 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:05,235 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:10,254 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:14,004 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:28:14,021 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:28:14,022 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:28:15,330 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:20,334 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:22,953 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:28:25,971 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:29,009 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:28:29,022 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:28:29,022 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:28:31,134 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:33,718 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:28:36,148 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:41,726 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:28:41,968 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:44,009 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:28:44,028 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:28:44,029 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:28:47,615 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:47,737 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:28:52,955 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:28:52,955 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:53,744 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:28:57,964 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:28:59,010 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:28:59,024 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:28:59,025 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:29:01,748 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:03,168 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:08,176 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:11,754 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:13,508 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:14,010 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:29:14,024 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:29:14,024 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:29:17,766 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:19,363 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:22,960 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:29:25,200 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:25,774 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:29,010 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:29:29,026 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:29:29,031 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:29:31,032 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:31,787 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:36,037 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:39,790 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:41,964 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:44,022 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:29:44,039 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:29:44,040 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:29:45,797 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:47,580 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:47,801 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:52,585 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:52,964 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:29:55,815 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:29:57,862 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:29:59,016 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:29:59,033 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-07 18:29:59,033 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: stop_status
+2024-02-07 18:29:59,818 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:30:02,973 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:30:03,824 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:30:05,833 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:30:07,835 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:30:08,197 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:30:12,262 DEBUG   SenderThread:9225 [sender.py:send():382] send: telemetry
+2024-02-07 18:30:12,263 DEBUG   SenderThread:9225 [sender.py:send():382] send: exit
+2024-02-07 18:30:12,263 INFO    SenderThread:9225 [sender.py:send_exit():589] handling exit code: 0
+2024-02-07 18:30:12,264 INFO    SenderThread:9225 [sender.py:send_exit():591] handling runtime: 2419
+2024-02-07 18:30:12,328 INFO    SenderThread:9225 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-07 18:30:12,329 INFO    SenderThread:9225 [sender.py:send_exit():597] send defer
+2024-02-07 18:30:12,329 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:12,329 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-07 18:30:12,329 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:12,330 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-07 18:30:12,330 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 1
+2024-02-07 18:30:12,330 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:12,330 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-07 18:30:12,330 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:12,330 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-07 18:30:12,330 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 2
+2024-02-07 18:30:12,331 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:12,331 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-07 18:30:12,331 INFO    HandlerThread:9225 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-07 18:30:12,331 DEBUG   SystemMonitor:9225 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-07 18:30:12,332 DEBUG   SystemMonitor:9225 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-07 18:30:12,332 INFO    HandlerThread:9225 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-07 18:30:12,334 INFO    HandlerThread:9225 [interfaces.py:finish():202] Joined disk monitor
+2024-02-07 18:30:12,367 INFO    HandlerThread:9225 [interfaces.py:finish():202] Joined gpu monitor
+2024-02-07 18:30:12,367 INFO    HandlerThread:9225 [interfaces.py:finish():202] Joined memory monitor
+2024-02-07 18:30:12,367 INFO    HandlerThread:9225 [interfaces.py:finish():202] Joined network monitor
+2024-02-07 18:30:12,368 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:12,368 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-07 18:30:12,368 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 3
+2024-02-07 18:30:12,368 DEBUG   SenderThread:9225 [sender.py:send():382] send: stats
+2024-02-07 18:30:12,369 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:12,369 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-07 18:30:12,369 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:12,370 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-07 18:30:12,370 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 4
+2024-02-07 18:30:12,370 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:12,370 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-07 18:30:12,370 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:12,464 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-07 18:30:12,464 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 5
+2024-02-07 18:30:12,464 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:12,465 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-07 18:30:12,465 DEBUG   SenderThread:9225 [sender.py:send():382] send: summary
+2024-02-07 18:30:12,466 INFO    SenderThread:9225 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-07 18:30:12,466 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:12,466 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-07 18:30:12,466 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 6
+2024-02-07 18:30:12,466 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:12,466 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-07 18:30:12,467 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:12,467 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-07 18:30:12,471 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:30:12,682 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 7
+2024-02-07 18:30:12,682 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:12,683 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-07 18:30:12,683 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:12,683 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-07 18:30:12,835 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/config.yaml
+2024-02-07 18:30:12,835 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_created():271] file/dir created: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/wandb-summary.json
+2024-02-07 18:30:13,026 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 8
+2024-02-07 18:30:13,027 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:13,027 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-07 18:30:13,027 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:13,027 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-07 18:30:13,027 INFO    SenderThread:9225 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-07 18:30:13,028 INFO    SenderThread:9225 [job_builder.py:_get_source_type():437] no source found
+2024-02-07 18:30:13,028 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 9
+2024-02-07 18:30:13,028 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:13,028 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-07 18:30:13,028 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:13,028 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-07 18:30:13,028 INFO    SenderThread:9225 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-07 18:30:13,263 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:13,836 INFO    Thread-13 :9225 [dir_watcher.py:_on_file_modified():288] file/dir modified: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:30:13,837 INFO    SenderThread:9225 [dir_watcher.py:finish():388] scan: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files
+2024-02-07 18:30:13,838 INFO    SenderThread:9225 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/conda-environment.yaml conda-environment.yaml
+2024-02-07 18:30:13,838 INFO    SenderThread:9225 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/wandb-metadata.json wandb-metadata.json
+2024-02-07 18:30:13,838 INFO    SenderThread:9225 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/config.yaml config.yaml
+2024-02-07 18:30:13,838 INFO    SenderThread:9225 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/requirements.txt requirements.txt
+2024-02-07 18:30:13,838 INFO    SenderThread:9225 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/wandb-summary.json wandb-summary.json
+2024-02-07 18:30:13,841 INFO    SenderThread:9225 [dir_watcher.py:finish():402] scan save: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log output.log
+2024-02-07 18:30:13,841 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 10
+2024-02-07 18:30:13,845 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:13,850 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:13,850 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-07 18:30:13,853 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:13,853 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-07 18:30:13,853 INFO    SenderThread:9225 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 18:30:14,264 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:14,264 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:14,383 INFO    wandb-upload_0:9225 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/conda-environment.yaml
+2024-02-07 18:30:14,457 INFO    wandb-upload_2:9225 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/requirements.txt
+2024-02-07 18:30:15,265 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:15,266 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:16,135 INFO    wandb-upload_4:9225 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/output.log
+2024-02-07 18:30:16,153 INFO    wandb-upload_3:9225 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/wandb-summary.json
+2024-02-07 18:30:16,265 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:16,265 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:17,265 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:17,266 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:18,266 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:18,266 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:19,266 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:19,267 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:30:19,267 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:20,266 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:20,267 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:21,267 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:21,267 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:22,267 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:22,267 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:23,268 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:23,268 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:24,268 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:24,268 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:24,268 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:30:25,268 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:25,268 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:26,268 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:26,269 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:27,269 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:27,269 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:28,269 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:28,269 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:29,269 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:29,270 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:29,270 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:30:30,270 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:30,271 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:31,271 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:31,271 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:32,271 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:32,272 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:33,272 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:33,273 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:34,273 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:34,274 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: status_report
+2024-02-07 18:30:34,274 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:35,274 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:35,274 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:35,417 INFO    wandb-upload_1:9225 [upload_job.py:push():131] Uploaded file /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/files/config.yaml
+2024-02-07 18:30:35,619 INFO    Thread-12 :9225 [sender.py:transition_state():617] send defer: 11
+2024-02-07 18:30:35,620 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:35,620 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-07 18:30:35,620 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:35,620 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-07 18:30:35,621 INFO    SenderThread:9225 [file_pusher.py:join():181] waiting for file pusher
+2024-02-07 18:30:35,621 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 12
+2024-02-07 18:30:35,621 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:35,621 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-07 18:30:35,621 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:35,621 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-07 18:30:35,621 INFO    SenderThread:9225 [file_stream.py:finish():595] file stream finish called
+2024-02-07 18:30:36,062 INFO    SenderThread:9225 [file_stream.py:finish():599] file stream finish is done
+2024-02-07 18:30:36,062 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 13
+2024-02-07 18:30:36,063 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:36,063 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-07 18:30:36,063 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:36,063 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-07 18:30:36,063 INFO    SenderThread:9225 [sender.py:transition_state():617] send defer: 14
+2024-02-07 18:30:36,063 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: defer
+2024-02-07 18:30:36,063 INFO    HandlerThread:9225 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-07 18:30:36,064 DEBUG   SenderThread:9225 [sender.py:send():382] send: final
+2024-02-07 18:30:36,064 DEBUG   SenderThread:9225 [sender.py:send():382] send: footer
+2024-02-07 18:30:36,064 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: defer
+2024-02-07 18:30:36,064 INFO    SenderThread:9225 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-07 18:30:36,065 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-07 18:30:36,065 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: poll_exit
+2024-02-07 18:30:36,066 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-07 18:30:36,067 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: server_info
+2024-02-07 18:30:36,068 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: server_info
+2024-02-07 18:30:36,108 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-07 18:30:36,109 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-07 18:30:36,109 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: job_info
+2024-02-07 18:30:36,277 DEBUG   SenderThread:9225 [sender.py:send_request():409] send_request: job_info
+2024-02-07 18:30:36,279 DEBUG   HandlerThread:9225 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-07 18:30:36,279 INFO    HandlerThread:9225 [handler.py:finish():869] shutting down handler
+2024-02-07 18:30:37,109 INFO    WriterThread:9225 [datastore.py:close():296] close: /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_174951-hv1m24c6/run-hv1m24c6.wandb
+2024-02-07 18:30:37,278 INFO    SenderThread:9225 [sender.py:finish():1572] shutting down sender
+2024-02-07 18:30:37,278 INFO    SenderThread:9225 [file_pusher.py:finish():175] shutting down file pusher
+2024-02-07 18:30:37,278 INFO    SenderThread:9225 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,36 @@
+We finished the setting up process!
+The device we use are shown here:  cuda:0
+We have loaded Vit-B/32:
+train_dataloader is prepared and its length is:  1017712 1007534 10178
+ We are in epoch:  0  out of total epoch:  4
+We are in i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([96, 3, 224, 224]) torch.Size([96, 77])
+loss 5.6484375
+We are in i:  1
+loss 6.68359375
+We are in i:  2
+loss 6.828125
+We are in i:  3
+loss 5.92578125
+We are in i:  4
+loss 5.05078125
+We are in i:  5
+loss 4.87109375
+We are in i:  6
+loss 4.6796875
+ We are in epoch:  1  out of total epoch:  4
+We are in i:  0
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([96, 3, 224, 224]) torch.Size([96, 77])
+loss 4.7109375
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  1
+loss 4.6328125
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  2
+loss 4.6796875
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
+We are in i:  3
+loss 4.6484375
+Checkpoint saved at epoch 2 to hlong883_med_big_data_hlong/ckpt/checkpoint_epoch_2.pth
