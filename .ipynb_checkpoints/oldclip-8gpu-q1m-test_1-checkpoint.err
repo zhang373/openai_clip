@@ -1,5 +1,5 @@
 ++ date +%s
-+ start=1707212871
++ start=1707316926
 + nvidia-smi
 + module load anaconda3
 + local _mlredir=1
@@ -95,50 +95,38 @@ export CONDA_PYTHON_EXE='\''/hpc2ssd/softwares/anaconda3/bin/python'\'''
 + echo 'We are going to run the main file'
 + python tune_clip.py
 wandb: Currently logged in as: 1033187767 (dsa-mdil). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.16.3 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
 wandb: Tracking run with wandb version 0.16.2
-wandb: Run data is saved locally in /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240206_174759-0m3kwn56
+wandb: Run data is saved locally in /hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/wandb/run-20240207_224220-a1f2me4v
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run revived-dust-9
+wandb: Syncing run sandy-dragon-44
 wandb: ⭐️ View project at https://wandb.ai/dsa-mdil/openai_clip
-wandb: 🚀 View run at https://wandb.ai/dsa-mdil/openai_clip/runs/0m3kwn56
-Traceback (most recent call last):
-  File "tune_clip.py", line 103, in <module>
-    main()
-  File "tune_clip.py", line 97, in main
-    mp.spawn(train,
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 246, in spawn
-    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 202, in start_processes
-    while not context.join():
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 163, in join
-    raise ProcessRaisedException(msg, error_index, failed_process.pid)
-torch.multiprocessing.spawn.ProcessRaisedException: 
-
--- Process 3 terminated with the following error:
-Traceback (most recent call last):
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/multiprocessing/spawn.py", line 74, in _wrap
-    fn(i, *args)
-  File "/hpc2hdd/home/wenshuozhang/wsZHANG/hanlin/tune_clip.py", line 80, in train
-    logits_per_image, logits_per_text = model(images, texts)
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1519, in forward
-    else self._run_ddp_forward(*inputs, **kwargs)
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1355, in _run_ddp_forward
-    return self.module(*inputs, **kwargs)  # type: ignore[index]
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/clip/model.py", line 360, in forward
-    text_features = self.encode_text(text)
-  File "/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/clip/model.py", line 346, in encode_text
-    x = x + self.positional_embedding.type(self.dtype)
-RuntimeError: The size of tensor a (400) must match the size of tensor b (77) at non-singleton dimension 2
-
+wandb: 🚀 View run at https://wandb.ai/dsa-mdil/openai_clip/runs/a1f2me4v
+wandb: - 0.008 MB of 0.008 MB uploadedwandb: \ 0.008 MB of 0.019 MB uploadedwandb: | 0.019 MB of 0.019 MB uploadedwandb: / 0.019 MB of 0.019 MB uploadedwandb: - 0.019 MB of 0.019 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                        epoch ▁▁▁▁▁▁▁▃▃▃▃▃▃▃▆▆▆▆▆▆▆███████
+wandb:                         loss ▂▂▅█▂▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                         step ▁▁▁▁▁▁▁▃▃▃▃▃▃▃▆▆▆▆▆▆▆███████
+wandb: val_image_retrieval_acc_top1 █▁█▅
+wandb: val_image_retrieval_acc_top5 █▁█▁
+wandb:  val_text_retrieval_acc_top1 █▁▆▁
+wandb:  val_text_retrieval_acc_top5 ▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:                        epoch 3
+wandb:                         loss 2.48828
+wandb:                         step 31494
+wandb: val_image_retrieval_acc_top1 0.03333
+wandb: val_image_retrieval_acc_top5 0.16667
+wandb:  val_text_retrieval_acc_top1 0.0
+wandb:  val_text_retrieval_acc_top5 0.16667
+wandb: 
+wandb: 🚀 View run sandy-dragon-44 at: https://wandb.ai/dsa-mdil/openai_clip/runs/a1f2me4v
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240207_224220-a1f2me4v/logs
 ++ date +%s
-+ end=1707213185
-+ runtime=314
-+ echo 'Finished! Total time: 314'
++ end=1707317148
++ runtime=222
++ echo 'Finished! Total time: 222'

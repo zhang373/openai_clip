@@ -1,0 +1,1 @@
+{"val_image_retrieval_acc_top1": 0.0, "val_text_retrieval_acc_top1": 0.0020833334419876337, "_timestamp": 1707375372.3060887, "_runtime": 57556.50196361542, "_step": 111, "val_image_retrieval_acc_top5": 0.006250000558793545, "val_text_retrieval_acc_top5": 0.01250000111758709, "epoch": 0, "loss": 7.09375, "step": 103}

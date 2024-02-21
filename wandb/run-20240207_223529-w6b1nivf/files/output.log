@@ -1,0 +1,49 @@
+We finished the setting up process!
+The device we use are shown here:  cuda:0
+We have loaded Vit-B/32:
+Length of val_dataloader:  1697
+train_dataloader is prepared and its length is:  1017712 1007534 10178
+ We are in epoch:  0  out of total epoch:  4
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([12, 3, 224, 224]) torch.Size([12, 77])
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.1666666716337204} {1: 0.0, 5: 0.13333334028720856}
+loss 3.046875
+loss 4.51953125
+loss 4.3671875
+loss 4.01953125
+loss 2.7890625
+loss 2.890625
+loss 2.6640625
+ We are in epoch:  1  out of total epoch:  4
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([12, 3, 224, 224]) torch.Size([12, 77])
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.03333333507180214, 5: 0.13333334028720856} {1: 0.03333333507180214, 5: 0.1666666716337204}
+loss 2.748046875
+loss 2.673828125
+loss 2.5390625
+loss 2.552734375
+loss 2.49609375
+loss 2.53125
+loss 2.55078125
+ We are in epoch:  2  out of total epoch:  4
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([12, 3, 224, 224]) torch.Size([12, 77])
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.03333333507180214, 5: 0.1666666716337204} {1: 0.03333333507180214, 5: 0.1666666716337204}
+loss 2.5234375
+loss 2.515625
+loss 2.515625
+loss 2.5078125
+loss 2.5078125
+loss 2.50390625
+loss 2.509765625
+ We are in epoch:  3  out of total epoch:  4
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([12, 3, 224, 224]) torch.Size([12, 77])
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.03333333507180214, 5: 0.1666666716337204} {1: 0.06666667014360428, 5: 0.1666666716337204}
+loss 2.484375
+loss 2.494140625
+loss 2.4921875
+loss 2.48828125
+loss 2.490234375
+loss 2.4921875
+loss 2.509765625

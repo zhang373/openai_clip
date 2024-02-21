@@ -6,8 +6,8 @@
 #SBATCH --ntasks-per-node=8
 #SBATCH --cpus-per-task=8
 #SBATCH --wait-all-nodes=1
-#SBATCH -o oldclip-8gpu-q1m-test_1.out   # 作业运行log输出文件
-#SBATCH -e oldclip-8gpu-q1m-test_1.err   # 作业错误信息log输出文件
+#SBATCH -o oldclip-8gpu-q1m-run_0207_1.out   # 作业运行log输出文件
+#SBATCH -e oldclip-8gpu-q1m-run_0207_1.err   # 作业错误信息log输出文件
 
 # store the starting time
 start=`date +%s`

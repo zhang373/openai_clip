@@ -1,0 +1,1 @@
+{"val_image_retrieval_acc_top1": 0.03333333507180214, "val_text_retrieval_acc_top1": 0.03333333507180214, "_timestamp": 1707316064.2404034, "_runtime": 67.70605850219727, "_step": 35, "val_image_retrieval_acc_top5": 0.1666666716337204, "val_text_retrieval_acc_top5": 0.1666666716337204, "epoch": 3, "loss": 2.486328125, "step": 125949, "_wandb": {"runtime": 66}}

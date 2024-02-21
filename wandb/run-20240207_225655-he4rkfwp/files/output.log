@@ -1,0 +1,115 @@
+We finished the setting up process!
+The device we use are shown here:  cuda:0
+We have loaded Vit-B/32:
+Length of val_dataloader:  255
+train_dataloader is prepared and its length is:  1017712 1007534 10178
+ We are in epoch:  0  out of total epoch:  40
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([1200, 3, 224, 224]) torch.Size([1200, 77])
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.004166666883975267} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+loss 7.8828125
+loss 7.83203125
+loss 8.21875
+loss 11.5390625
+loss 7.4921875
+loss 7.375
+loss 7.4375
+loss 7.4375
+loss 7.328125
+loss 7.1953125
+loss 7.1796875
+loss 7.203125
+loss 7.17578125
+loss 7.125
+loss 7.12109375
+loss 7.1484375
+loss 7.1328125
+loss 7.12109375
+loss 7.109375
+loss 7.109375
+loss 7.12890625
+loss 7.1171875
+loss 7.1015625
+loss 7.1015625
+loss 7.1015625
+loss 7.109375
+loss 7.1015625
+loss 7.1015625
+loss 7.09765625
+loss 7.09765625
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0020833334419876337, 5: 0.008333333767950535} {1: 0.0020833334419876337, 5: 0.010416666977107525}
+loss 7.1015625
+loss 7.1015625
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.08984375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.08984375
+loss 7.09375
+loss 7.09375
+loss 7.08984375
+loss 7.08984375
+loss 7.09375
+loss 7.09375
+loss 7.08984375
+loss 7.09375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.004166666883975267, 5: 0.01250000111758709} {1: 0.0020833334419876337, 5: 0.008333333767950535}
+loss 7.08984375
+loss 7.0859375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.09375
+loss 7.09375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.0859375
+loss 7.0859375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.0859375
+loss 7.08984375
+loss 7.08984375
+loss 7.08984375
+loss 7.0859375
+loss 7.08984375
+loss 7.0859375
+loss 7.0859375
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.006250000558793545} {1: 0.0020833334419876337, 5: 0.01250000111758709}
+loss 7.0859375
+loss 7.0859375
+loss 7.0859375
+loss 7.08984375
+loss 7.0859375
+loss 7.08984375
+loss 7.0859375
+loss 7.0859375
+loss 7.0859375
+loss 7.08984375
+loss 7.0859375
+loss 7.08984375
+loss 7.0859375

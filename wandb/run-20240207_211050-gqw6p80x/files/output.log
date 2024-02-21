@@ -1,0 +1,118 @@
+We finished the setting up process!
+The device we use are shown here:  cuda:0
+We have loaded Vit-B/32:
+Length of val_dataloader:  255
+train_dataloader is prepared and its length is:  1017712 1007534 10178
+ We are in epoch:  0  out of total epoch:  4
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([1200, 3, 224, 224]) torch.Size([1200, 77])
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0, 5: 0.00390625} {1: 0.0007812500116415322, 5: 0.0031250000465661287}
+loss 7.7734375
+loss 8.3125
+
+loss 9.421875
+loss 7.734375
+loss 7.3359375
+loss 7.28515625
+loss 7.2265625
+loss 7.2109375
+loss 7.15234375
+loss 7.1328125
+loss 7.1171875
+loss 7.11328125
+loss 7.12109375
+loss 7.125
+loss 7.12890625
+loss 7.109375
+loss 7.1015625
+loss 7.1015625
+loss 7.09765625
+loss 7.09765625
+loss 7.1015625
+loss 7.1015625
+loss 7.1015625
+loss 7.1015625
+loss 7.1015625
+loss 7.1015625
+loss 7.09765625
+loss 7.09765625
+loss 7.09375
+loss 7.09375
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0015625000232830644, 5: 0.00390625} {1: 0.0007812500116415322, 5: 0.0023437500931322575}
+loss 7.09375
+loss 7.09765625
+loss 7.09765625
+loss 7.09765625
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+/hpc2hdd/home/wenshuozhang/.conda/envs/monodepth2/lib/python3.8/site-packages/PIL/Image.py:970: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0015625000232830644, 5: 0.004687500186264515} {1: 0.0015625000232830644, 5: 0.0078125}
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09765625
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.08984375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+top_k_accuracies_image, top_k_accuracies_text:  {1: 0.0007812500116415322, 5: 0.0031250000465661287} {1: 0.0007812500116415322, 5: 0.00390625}
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.08984375
+loss 7.08984375
+loss 7.09375
+loss 7.09375
+loss 7.09375
+loss 7.08984375

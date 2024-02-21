@@ -1,0 +1,8 @@
+We finished the setting up process!
+The device we use are shown here:  cuda:0
+We have loaded Vit-B/32:
+Length of val_dataloader:  2545
+train_dataloader is prepared and its length is:  1017712 1007534 10178
+ We are in epoch:  0  out of total epoch:  4
+We Finished the preprocess for images and texts
+Image and Text shape:  torch.Size([12, 3, 224, 224]) torch.Size([12, 77])
